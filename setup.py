@@ -13,7 +13,7 @@ setup(
                         'pymongo', 'requests'],
     package_data = {
         # If any package contains *.txt or *.rst files, include them:
-        '': ['*.txt', '*.rst', '*.conf'],
+        '': ['*.txt', '*.rst', '*.conf', '*.csv'],
     },
 
     # metadata for upload to PyPI
