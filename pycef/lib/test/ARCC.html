@@ -1,0 +1,1008 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head id="ctl00_Head1" xmlns="http://www.w3.org/1999/xhtml"><meta name="description" /><meta name="keywords" /><title>
+	CEFConnect - Brought to you by Nuveen Closed-End Funds
+</title>
+	<link rel="shortcut icon" href="../favicon.ico" /><link href="../includes/styles.css" rel="stylesheet" type="text/css" /><link href="../includes/styles2.css" rel="stylesheet" type="text/css" /><script type="text/javascript" src="../javascript/Common.js"></script><link href="/WebResource.axd?d=T7ZiohEC_I2-XkWJ_mIdLHzoZIrWOs7o2gHBsYZaDqTAj5khLu5PL6qMD-1fbAQxtbzLTOhQel75aGOLSpa8RRNYc51-ronJwDWKLBDYQPfoOdNewIZDBts2HfzfQJL6KqI0VplHEV_I__KPspLnY95Bgjw1&amp;t=633398888440000000" type="text/css" rel="stylesheet" /><link href="/WebResource.axd?d=zm14V0XhyxIhI31V6po3mO40ZS9XpunN4QnEKio_FBb587AjTtqyNFN-dyXi2wMcaE4FPL0wkJTevRNWDXJMyof8vIlbUsZBXzVEqv54_vtQTiT6GlECrY1ITtwZ_rQzE6rrnDXzLmtrL0BvIyEB1tkXtIc1&amp;t=633398888440000000" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9518352-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link type="text/css" rel="stylesheet" href="/WebResource.axd?d=76we0shHDhfDUgAS_0nSJedw4J-PXcg8xgGdXuOKPdkwdpTD06sPMDWB6uZoiAXJ1vgW6WJl89ujVPJ499UWybvTkIBKYeJq470VSJ4Ud2UFRfA1zFd3fiY9w_4GXkfuerQfOGERjwx4EBK0sIHDpqUe87hAWXWAeF86mJYYgaDiBayB0&amp;amp;t=633355801579857526" /><link type="text/css" rel="stylesheet" href="/RadControls/Calendar/Skins/Default2006/Calendar.css" /></head>
+<body>
+	<form name="aspnetForm" method="post" action="Summary.aspx?ticker=ARCC" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="ctl00_contents_SummaryContainer_ClientState" id="ctl00_contents_SummaryContainer_ClientState" value="{&quot;ActiveTabIndex&quot;:0,&quot;TabState&quot;:[true,true,true,true,true]}" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTMwNzMyNjI1Nw9kFgJmD2QWAgIDD2QWCAIFD2QWAmYPD2QWAh4Hb25Gb2N1cwUNdGhpcy52YWx1ZT0nJ2QCDQ9kFgICAw8WAh4HVmlzaWJsZWhkAg8PZBYGAgUPPCsADQBkAgYPPCsADwBkAgwPZBYIZg9kFgICAQ9kFgICAQ9kFgICBQ8PZA8QFgFmFgEWAh4OUGFyYW1ldGVyVmFsdWUFBEFSQ0MWAQIEZGQCAQ9kFgJmD2QWAgIBD2QWDAIFD2QWBGYPFCsABw8WCB4NTGFiZWxDc3NDbGFzcwUTcmFkTGFiZWxDc3NfRGVmYXVsdB4EVGV4dAUTMjAwOC0wNS0wMS0wMC0wMC0wMB4OUmFkQ29udHJvbHNEaXIFDn4vUmFkQ29udHJvbHMvHhJVc2VFbWJlZGRlZFNjcmlwdHNnZBYGHghDc3NDbGFzcwUYcmFkSG92ZXJDc3NfRGVmYXVsdCB0YWJzHgVXaWR0aBsAAAAAAABZQAcAAAAeBF8hU0ICggIWBh8HBRpyYWRJbnZhbGlkQ3NzX0RlZmF1bHQgdGFicx8IGwAAAAAAAFlABwAAAB8JAoICFgYfBwUacmFkRm9jdXNlZENzc19EZWZhdWx0IHRhYnMfCBsAAAAAAABZQAcAAAAfCQKCAhYGHwcFGnJhZEVuYWJsZWRDc3NfRGVmYXVsdCB0YWJzHwgbAAAAAAAAWUAHAAAAHwkCggIWBh8HBRtyYWREaXNhYmxlZENzc19EZWZhdWx0IHRhYnMfCBsAAAAAAABZQAcAAAAfCQKCAhYGHwcFH3JhZEVtcHR5TWVzc2FnZUNzc19EZWZhdWx0IHRhYnMfCBsAAAAAAABZQAcAAAAfCQKCAmQCAg8UKwAMDxYeBRtVc2VDb2x1bW5IZWFkZXJzQXNTZWxlY3RvcnNoBQlDdWx0dXJlSUQCiQgFGFVzZVJvd0hlYWRlcnNBc1NlbGVjdG9yc2gFBE1pbkQGAIBTXDGJZwgFD1JlbmRlckludmlzaWJsZWcFEkRlZmF1bHRDZWxsUGFkZGluZwIDBRFFbmFibGVNdWx0aVNlbGVjdGgFEkRlZmF1bHRDZWxsU3BhY2luZwIDBR1FbmFibGVNb250aFllYXJGYXN0TmF2aWdhdGlvbmgFDUN1bHR1cmVOYW1lSUQFBWVuLVVTBQRNYXhEBgAAP/PnMjEJBQ1TZWxlY3RlZERhdGVzDwWVAVRlbGVyaWsuV2ViQ29udHJvbHMuQmFzZS5DYWxlbmRhci5Db2xsZWN0aW9ucy5EYXRlVGltZUNvbGxlY3Rpb24sIFJhZENhbGVuZGFyLk5ldDIsIFZlcnNpb249Mi4yLjIuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1hMTQzMmNkMzQxMTczMTQwFCsAAAULU3BlY2lhbERheXMPBZgBVGVsZXJpay5XZWJDb250cm9scy5CYXNlLkNhbGVuZGFyLkNvbGxlY3Rpb25zLkNhbGVuZGFyRGF5Q29sbGVjdGlvbiwgUmFkQ2FsZW5kYXIuTmV0MiwgVmVyc2lvbj0yLjIuMi4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWExNDMyY2QzNDExNzMxNDAUKwAABRNTaG93T3RoZXJNb250aHNEYXlzaAUNQ3VsdHVyZUluZm9JRCgpbVN5c3RlbS5HbG9iYWxpemF0aW9uLkN1bHR1cmVJbmZvLCBtc2NvcmxpYiwgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkXRW5nbGlzaCAoVW5pdGVkIFN0YXRlcykPFgQfBQUOfi9SYWRDb250cm9scy8fBmdkFgQfBwUZcmFkQ2FsRGVmYXVsdF9EZWZhdWx0MjAwNh8JAgIWBB8HBRdUYWJsZUxheW91dF9EZWZhdWx0MjAwNh8JAgIWBB8HBRZvdGhlck1vbnRoX0RlZmF1bHQyMDA2HwkCAhYEHwcFFHRpdGxlYmFyX0RlZmF1bHQyMDA2HwkCAhYEHwcFGHJhZENhbFNlbGVjdF9EZWZhdWx0MjAwNh8JAgIWBB8HBRZEYXlzT2ZXZWVrX0RlZmF1bHQyMDA2HwkCAhYEHwcFGXJhZENhbERpc2FibGVfRGVmYXVsdDIwMDYfCQICFgQfBwUWb3V0T2ZSYW5nZV9EZWZhdWx0MjAwNh8JAgIWBB8HBSByYWRDYWxXZWVrZW5kRGVmYXVsdF9EZWZhdWx0MjAwNh8JAgIWBB8HBRdyYWRDYWxIb3Zlcl9EZWZhdWx0MjAwNh8JAgIWBB8HBRxNb250aFllYXJGYXN0TmF2X0RlZmF1bHQyMDA2HwkCAmQCBg9kFgRmDxQrAAcPFggfAwUTcmFkTGFiZWxDc3NfRGVmYXVsdB8EBRMyMDA5LTA2LTAyLTAwLTAwLTAwHwUFDn4vUmFkQ29udHJvbHMvHwZnZBYGHwcFGHJhZEhvdmVyQ3NzX0RlZmF1bHQgdGFicx8IGwAAAAAAAFlABwAAAB8JAoICFgYfBwUacmFkSW52YWxpZENzc19EZWZhdWx0IHRhYnMfCBsAAAAAAABZQAcAAAAfCQKCAhYGHwcFGnJhZEZvY3VzZWRDc3NfRGVmYXVsdCB0YWJzHwgbAAAAAAAAWUAHAAAAHwkCggIWBh8HBRpyYWRFbmFibGVkQ3NzX0RlZmF1bHQgdGFicx8IGwAAAAAAAFlABwAAAB8JAoICFgYfBwUbcmFkRGlzYWJsZWRDc3NfRGVmYXVsdCB0YWJzHwgbAAAAAAAAWUAHAAAAHwkCggIWBh8HBR9yYWRFbXB0eU1lc3NhZ2VDc3NfRGVmYXVsdCB0YWJzHwgbAAAAAAAAWUAHAAAAHwkCggJkAgIPFCsADA8WHgUbVXNlQ29sdW1uSGVhZGVyc0FzU2VsZWN0b3JzaAUJQ3VsdHVyZUlEAokIBRhVc2VSb3dIZWFkZXJzQXNTZWxlY3RvcnNoBQRNaW5EBgCAU1wxiWcIBQ9SZW5kZXJJbnZpc2libGVnBRJEZWZhdWx0Q2VsbFBhZGRpbmcCAwURRW5hYmxlTXVsdGlTZWxlY3RoBRJEZWZhdWx0Q2VsbFNwYWNpbmcCAwUdRW5hYmxlTW9udGhZZWFyRmFzdE5hdmlnYXRpb25oBQ1DdWx0dXJlTmFtZUlEBQVlbi1VUwUETWF4RAYAAD/z5zIxCQUNU2VsZWN0ZWREYXRlcw8FlQFUZWxlcmlrLldlYkNvbnRyb2xzLkJhc2UuQ2FsZW5kYXIuQ29sbGVjdGlvbnMuRGF0ZVRpbWVDb2xsZWN0aW9uLCBSYWRDYWxlbmRhci5OZXQyLCBWZXJzaW9uPTIuMi4yLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YTE0MzJjZDM0MTE3MzE0MBQrAAAFC1NwZWNpYWxEYXlzDwWYAVRlbGVyaWsuV2ViQ29udHJvbHMuQmFzZS5DYWxlbmRhci5Db2xsZWN0aW9ucy5DYWxlbmRhckRheUNvbGxlY3Rpb24sIFJhZENhbGVuZGFyLk5ldDIsIFZlcnNpb249Mi4yLjIuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1hMTQzMmNkMzQxMTczMTQwFCsAAAUTU2hvd090aGVyTW9udGhzRGF5c2gFDUN1bHR1cmVJbmZvSUQoKwQXRW5nbGlzaCAoVW5pdGVkIFN0YXRlcykPFgQfBQUOfi9SYWRDb250cm9scy8fBmdkFgQfBwUZcmFkQ2FsRGVmYXVsdF9EZWZhdWx0MjAwNh8JAgIWBB8HBRdUYWJsZUxheW91dF9EZWZhdWx0MjAwNh8JAgIWBB8HBRZvdGhlck1vbnRoX0RlZmF1bHQyMDA2HwkCAhYEHwcFFHRpdGxlYmFyX0RlZmF1bHQyMDA2HwkCAhYEHwcFGHJhZENhbFNlbGVjdF9EZWZhdWx0MjAwNh8JAgIWBB8HBRZEYXlzT2ZXZWVrX0RlZmF1bHQyMDA2HwkCAhYEHwcFGXJhZENhbERpc2FibGVfRGVmYXVsdDIwMDYfCQICFgQfBwUWb3V0T2ZSYW5nZV9EZWZhdWx0MjAwNh8JAgIWBB8HBSByYWRDYWxXZWVrZW5kRGVmYXVsdF9EZWZhdWx0MjAwNh8JAgIWBB8HBRdyYWRDYWxIb3Zlcl9EZWZhdWx0MjAwNh8JAgIWBB8HBRxNb250aFllYXJGYXN0TmF2X0RlZmF1bHQyMDA2HwkCAmQCCA88KwANAQAPFgQeC18hRGF0YUJvdW5kZx4LXyFJdGVtQ291bnRmZGQCCQ88KwAPAQAPFgQfCmcfC2ZkZAIKDw9kDxAWAWYWARYCHwIFBEFSQ0MWAQIEZGQCCw8PZA8QFgNmAgECAhYDFgIfAgUEQVJDQxYCHwJkFgIfAmQWAwIEAgMCA2RkAgIPZBYCZg9kFgICAQ9kFgYCAQ88KwANAGQCCg9kFgRmDxQrAAcPFggfAwUTcmFkTGFiZWxDc3NfRGVmYXVsdB8EBRMyMDA4LTA1LTAxLTAwLTAwLTAwHwUFDn4vUmFkQ29udHJvbHMvHwZnZBYGHwcFGHJhZEhvdmVyQ3NzX0RlZmF1bHQgdGFicx8IGwAAAAAAAFlABwAAAB8JAoICFgYfBwUacmFkSW52YWxpZENzc19EZWZhdWx0IHRhYnMfCBsAAAAAAABZQAcAAAAfCQKCAhYGHwcFGnJhZEZvY3VzZWRDc3NfRGVmYXVsdCB0YWJzHwgbAAAAAAAAWUAHAAAAHwkCggIWBh8HBRpyYWRFbmFibGVkQ3NzX0RlZmF1bHQgdGFicx8IGwAAAAAAAFlABwAAAB8JAoICFgYfBwUbcmFkRGlzYWJsZWRDc3NfRGVmYXVsdCB0YWJzHwgbAAAAAAAAWUAHAAAAHwkCggIWBh8HBR9yYWRFbXB0eU1lc3NhZ2VDc3NfRGVmYXVsdCB0YWJzHwgbAAAAAAAAWUAHAAAAHwkCggJkAgIPFCsADA8WHgUbVXNlQ29sdW1uSGVhZGVyc0FzU2VsZWN0b3JzaAUJQ3VsdHVyZUlEAokIBRhVc2VSb3dIZWFkZXJzQXNTZWxlY3RvcnNoBQRNaW5EBgCAU1wxiWcIBQ9SZW5kZXJJbnZpc2libGVnBRJEZWZhdWx0Q2VsbFBhZGRpbmcCAwURRW5hYmxlTXVsdGlTZWxlY3RoBRJEZWZhdWx0Q2VsbFNwYWNpbmcCAwUdRW5hYmxlTW9udGhZZWFyRmFzdE5hdmlnYXRpb25oBQ1DdWx0dXJlTmFtZUlEBQVlbi1VUwUETWF4RAYAAD/z5zIxCQUNU2VsZWN0ZWREYXRlcw8FlQFUZWxlcmlrLldlYkNvbnRyb2xzLkJhc2UuQ2FsZW5kYXIuQ29sbGVjdGlvbnMuRGF0ZVRpbWVDb2xsZWN0aW9uLCBSYWRDYWxlbmRhci5OZXQyLCBWZXJzaW9uPTIuMi4yLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YTE0MzJjZDM0MTE3MzE0MBQrAAAFC1NwZWNpYWxEYXlzDwWYAVRlbGVyaWsuV2ViQ29udHJvbHMuQmFzZS5DYWxlbmRhci5Db2xsZWN0aW9ucy5DYWxlbmRhckRheUNvbGxlY3Rpb24sIFJhZENhbGVuZGFyLk5ldDIsIFZlcnNpb249Mi4yLjIuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1hMTQzMmNkMzQxMTczMTQwFCsAAAUTU2hvd090aGVyTW9udGhzRGF5c2gFDUN1bHR1cmVJbmZvSUQoKwQXRW5nbGlzaCAoVW5pdGVkIFN0YXRlcykPFgQfBQUOfi9SYWRDb250cm9scy8fBmdkFgQfBwUZcmFkQ2FsRGVmYXVsdF9EZWZhdWx0MjAwNh8JAgIWBB8HBRdUYWJsZUxheW91dF9EZWZhdWx0MjAwNh8JAgIWBB8HBRZvdGhlck1vbnRoX0RlZmF1bHQyMDA2HwkCAhYEHwcFFHRpdGxlYmFyX0RlZmF1bHQyMDA2HwkCAhYEHwcFGHJhZENhbFNlbGVjdF9EZWZhdWx0MjAwNh8JAgIWBB8HBRZEYXlzT2ZXZWVrX0RlZmF1bHQyMDA2HwkCAhYEHwcFGXJhZENhbERpc2FibGVfRGVmYXVsdDIwMDYfCQICFgQfBwUWb3V0T2ZSYW5nZV9EZWZhdWx0MjAwNh8JAgIWBB8HBSByYWRDYWxXZWVrZW5kRGVmYXVsdF9EZWZhdWx0MjAwNh8JAgIWBB8HBRdyYWRDYWxIb3Zlcl9EZWZhdWx0MjAwNh8JAgIWBB8HBRxNb250aFllYXJGYXN0TmF2X0RlZmF1bHQyMDA2HwkCAmQCDA88KwANAGQCAw9kFgJmD2QWAgIBD2QWBmYPEGRkFgBkAgQPZBYCAgEPPCsADQBkAgUPDxYCHgtOYXZpZ2F0ZVVybAUkL0RvY3VtZW50cy9EZWZhdWx0LmFzcHg/ZmlsZUlkPTQ1OTQ4ZGQCEQ9kFgICBQ8PFgIfDAUkL0RvY3VtZW50cy9EZWZhdWx0LmFzcHg/ZmlsZUlkPTQ1OTQ3ZGQYEAVKY3RsMDAkY29udGVudHMkU3VtbWFyeUNvbnRhaW5lciRDaGFyYXRlcmlzdGljc1RhYiR1Y1BvcnRDaGFyJHBjU3VtbWFyeUdyaWQPZ2QFGmN0bDAwJGNvbnRlbnRzJFN1bW1hcnlHcmlkD2dkBUxjdGwwMCRjb250ZW50cyRTdW1tYXJ5Q29udGFpbmVyJENoYXJhdGVyaXN0aWNzVGFiJHVjUG9ydENoYXIkVG9wSG9sZGluZ3NHcmlkD2dkBU5jdGwwMCRjb250ZW50cyRTdW1tYXJ5Q29udGFpbmVyJENoYXJhdGVyaXN0aWNzVGFiJHVjUG9ydENoYXIkcGNTdGF0ZSRTdGF0ZUdyaWQPZ2QFRmN0bDAwJGNvbnRlbnRzJFN1bW1hcnlDb250YWluZXIkRGlzdHJpYnV0aW9uc1RhYiR1Y0Rpc3RyaWJ1dGlvbnMkZHZGQjEPZ2QFPGN0bDAwJGNvbnRlbnRzJFN1bW1hcnlDb250YWluZXIkQmFzaWNzVGFiJHVjRnVuZEJhc2ljcyRkdkZCMg9nZAUfY3RsMDAkY29udGVudHMkU3VtbWFyeUNvbnRhaW5lcg8PZGZkBUVjdGwwMCRjb250ZW50cyRTdW1tYXJ5Q29udGFpbmVyJFByaWNpbmdUYWIkdWNQcmljaW5nJFByaWNlSGlzdG9yeUdyaWQPZ2QFUmN0bDAwJGNvbnRlbnRzJFN1bW1hcnlDb250YWluZXIkQ2hhcmF0ZXJpc3RpY3NUYWIkdWNQb3J0Q2hhciRwY0NvdW50cnkkQ291bnRyeUdyaWQPZ2QFG2N0bDAwJGNvbnRlbnRzJERpc3RyRGV0YWlscw9nZAVBY3RsMDAkY29udGVudHMkU3VtbWFyeUNvbnRhaW5lciRQcmljaW5nVGFiJHVjUHJpY2luZyREaXNjb3VudEdyaWQPZ2QFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYOBQ5jdGwwMCRpYlNlYXJjaAUfY3RsMDAkY29udGVudHMkU3VtbWFyeUNvbnRhaW5lcgVYY3RsMDAkY29udGVudHMkU3VtbWFyeUNvbnRhaW5lciREaXN0cmlidXRpb25zVGFiJHVjRGlzdHJpYnV0aW9ucyRSYWRkYXRlcGlja2VyMSRjYWxlbmRhcgVYY3RsMDAkY29udGVudHMkU3VtbWFyeUNvbnRhaW5lciREaXN0cmlidXRpb25zVGFiJHVjRGlzdHJpYnV0aW9ucyRSYWRkYXRlcGlja2VyMiRjYWxlbmRhcgU8Y3RsMDAkY29udGVudHMkU3VtbWFyeUNvbnRhaW5lciRQcmljaW5nVGFiJHVjUHJpY2luZyRQcmljZTFNBTxjdGwwMCRjb250ZW50cyRTdW1tYXJ5Q29udGFpbmVyJFByaWNpbmdUYWIkdWNQcmljaW5nJFByaWNlMU0FPGN0bDAwJGNvbnRlbnRzJFN1bW1hcnlDb250YWluZXIkUHJpY2luZ1RhYiR1Y1ByaWNpbmckUHJpY2U1WQU8Y3RsMDAkY29udGVudHMkU3VtbWFyeUNvbnRhaW5lciRQcmljaW5nVGFiJHVjUHJpY2luZyRQcmljZTVZBU1jdGwwMCRjb250ZW50cyRTdW1tYXJ5Q29udGFpbmVyJFByaWNpbmdUYWIkdWNQcmljaW5nJFByaWNlRGF0ZVBpY2tlciRjYWxlbmRhcgVKY3RsMDAkY29udGVudHMkU3VtbWFyeUNvbnRhaW5lciRQZXJmb3JtYW5jZVRhYiR1Y1BlcmZvcm1hbmNlJFBlcmZCb3hMaXN0JDAFSmN0bDAwJGNvbnRlbnRzJFN1bW1hcnlDb250YWluZXIkUGVyZm9ybWFuY2VUYWIkdWNQZXJmb3JtYW5jZSRQZXJmQm94TGlzdCQxBUpjdGwwMCRjb250ZW50cyRTdW1tYXJ5Q29udGFpbmVyJFBlcmZvcm1hbmNlVGFiJHVjUGVyZm9ybWFuY2UkUGVyZkJveExpc3QkMgVKY3RsMDAkY29udGVudHMkU3VtbWFyeUNvbnRhaW5lciRQZXJmb3JtYW5jZVRhYiR1Y1BlcmZvcm1hbmNlJFBlcmZCb3hMaXN0JDMFSmN0bDAwJGNvbnRlbnRzJFN1bW1hcnlDb250YWluZXIkUGVyZm9ybWFuY2VUYWIkdWNQZXJmb3JtYW5jZSRQZXJmQm94TGlzdCQzBUdjdGwwMCRjb250ZW50cyRTdW1tYXJ5Q29udGFpbmVyJERpc3RyaWJ1dGlvbnNUYWIkdWNEaXN0cmlidXRpb25zJGd2TWFpbg88KwAKAQhmZAVQY3RsMDAkY29udGVudHMkU3VtbWFyeUNvbnRhaW5lciRDaGFyYXRlcmlzdGljc1RhYiR1Y1BvcnRDaGFyJHBjU2VjdG9yJFNlY3RvckdyaWQPZ2QFPGN0bDAwJGNvbnRlbnRzJFN1bW1hcnlDb250YWluZXIkQmFzaWNzVGFiJHVjRnVuZEJhc2ljcyRkdkZCMQ9nZAVFY3RsMDAkY29udGVudHMkU3VtbWFyeUNvbnRhaW5lciRQZXJmb3JtYW5jZVRhYiR1Y1BlcmZvcm1hbmNlJGd2UGFzdDIwD2dkq59a53aK2W+vtwp88qb3kaXffQc=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pBB8ik8htOwnKrXYKnf6MzlbKnGHmXpP4gW1NAKI1Z_sK3azC24DsPcscxGG5D148tmt5B9bWiiXHlw0Mh2r9Kf7Yjg1&amp;t=634605294834856163" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+// WebsiteAnalyticsCode Registration
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=s3FCSt3_dMvynPP7qq9h6K38-ixy1rR6RnxpAzKzHwgYAuZNVSCj5C4lvJ_ZMSOTYiiWmfO5sutyYfC8xodsA2MlYAPFhRBL5ydhpZzDH5F91mMfilhb-qplHG-vTANuGVYPl9Uul8y-3T7u6pcfkX_dCkpAzzpvjdTA5gKpkDU4rjHN0&amp;t=634346778057182217" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mMCHjYBFOe54D79AA9AaBfKEfsG9Xz5QitM1M5nkah4BfXOaLN6vnNjrl7bh1FLLtzQxvbDBUvmz5_iE6QVPAIO5Pk6fBsL1sZ87VBVVGib7GntIpmqvTaa1JV5bOSVBTbPpECPa3NAH0CXsQitcMHTZQLIPgcbKLTwS2kf1-WnIGoVU0&amp;t=634346778057182217" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=V3vGx_f_YiwYLqIwgJi4qYIXNjLKXB01SKDKY8tfuVIBtYE48OYk4Ee0CJFSFMYBUTEW9Vbme7FV0u7edsEpLI7wK6iFRyJFukLBjnN_uPdIObPlz4ZV2ZbQsUD94HicQhTpDXd3dfVvRyzPkpjMQFQ-lss1&amp;t=633398888440000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=QkS63mWC2FoMw1LSuxPr1yTTIpHk_aP_vBLpkaHY0MqMVoLWMDcZu2t3X6AhYYJOj0cRUZhXd6ckERmevMprWdSR7iL5hwhqbIu281R5i9oMav52kmIoZ2de6HSmy0WVLbm7Lv9m45NdG7fyZ21xincj-uu9VOst1IIbr3SJV_lxKljk0&amp;t=633398888440000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=rqAw_DAoPQhd-ZHmL6rsJNINMAuzBPlGK2tsBcHGAeBG6SbhvrwZdOVKR0q1fgS1LM471aCBp_Hts1-FsmTkjC0pn998g1BnSazbSBvEVCpK-UGxD7Md-G8GTBRlDxC71QcQ6rbAHvzEkLtwtZCg2tWYxeo1&amp;t=633398888440000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=HpC4ZvEnpVXkF0_logrHbj7JGAimNkdntq0gqhoxzAjMAw7G4e22plk2doWx0vTTlBGm-Ae39p8CiOLMqEfUYh_da1tx1uGjW76YfRadlM5dQO7nPTRcuIVWdzNWPTfS_o2SeyfyVRpyUhO7wxvJf6l4l_6UokVo0Q_CtipWkvwWSoCs9WLdQEWxv3NhpGUpjY5OCg2&amp;t=633398888440000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=p8or370kF03Dg0nZ9AguWC4bs__jqAuqBlmdzlj3T_HY7aW0I6e54QQlJNMkoTi9m-ziJrnf1QvrYtp-QLGOpbf-hYsBv1OkXDfOZdnMAI9KpmU6U67AUCqIuMV6Hp45pbw0GvLDcXUkMrxwpBwJ74tD1Cc1&amp;t=633398888440000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=fVIIDVYMj3CJ-9e8-2dbckEfhX7udnZqSZcl2S25HoGrn0bvyboN10Row-qMd9A6vIAmDpwykfWzqa91LhHt4KbQlhlvW9U0E1Q_gyRAi5oScFvU8jyqsAPeOM-HbS76Ir3mO_9arRmmfegFEYhIRfVlfsE1&amp;t=633398888440000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=6WZYUJ10JFVSxk2sppB4nkdsDYbD7f-k1Nxuy8UjvbgNU1Vc-f7X5X_7tDQMY2Ze-jOC5xw5-5328y5eDeFWDCCx9mumuJPtcckeX-HptC0ml9g9FxzpmUtCP7EK6W_nluEdWfwni2DMYXHIrMezVwVko1QG41fqHC1-VQdx6P9T2Y7u0&amp;t=633398888440000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ZUCJQBXxCZ625xnZE63h9n9VuQeRms5qo96QzBDReQuVMQhUlD8iCvYKe05vai_pd4EzIx_JLa_EMrKZwzr2-05OWXkbSN0fs6Sj9IaENjIHy1FYg1HxdUATQdc-9SxK0DmQNX8uViWXv4Ool4zDWXBy9i3HAAGNnG1yZIkm5OdTgA2F0&amp;t=633398888440000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=xjaKCrxLhodzxuQLdVb5riLzzzUmB-4BclLDqam7voHMuwOl1vIM92wcT4JQXId5j7DqMnAgZ_ns9dBU1UDTT_E7R1n9QFs-JR_xOQ4W-9CMEBWBTFSl09OrAwZOjxKKIN8kgltWBC256SbBUD8M1UOpF09tLVde4aPFBbM1zbltROUt0&amp;t=633398888440000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=SFo8O30hq5D2X8k-g2Ql4BJzE619nx-8Ym5CkooeNsRXO84pd-5JD2odfkx2OUALhP8YJCHHN1F7nWQjBOqdgMhrUqzxzsSOrzhMCvxx2wFtGckkXSPy0jrSEMDuo1Zj82KVZICKA5B7vayPbA_9DhbJaXIU-MFB2DvS4bkHHXAeooIx0&amp;t=633398888440000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=FNS5t4pAcUMcdkkXu0Nwa5E9qFuKHriuoPMX_OAqDhGiIhlIDlkDw5TA1PNR-qATBhin6b6obHkqLaFgO0B6_txak31bJwVsWsYgb38Rtq_YUEfWioL7z0WuUb-GPlLEsNC3ctr1Jykf4aqRS6zgcoh7M703Gx-uMkgRUXIHkFeCMWXv0&amp;t=633398888440000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=CkTguP0ZYjgvutYVh0hGtgBKpDyGUCL6ypK8nyiRdjOwdU8OGfu0U82-I6LFmXzIwH8_HAS_8Lgx8BApt61bMa93MLJp_wEHmTGHvEbfX1dthKRTHb2K60aqzPMZA56hnhBb5mkCdP0LK5NT_TjydjXN9PfntwaP4gMWpiTDlYMKHCEMBC7rPQlueoYlFvlA_RaMoA2&amp;t=633398888440000000" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var PageMethods = function() {
+PageMethods.initializeBase(this);
+this._timeout = 0;
+this._userContext = null;
+this._succeeded = null;
+this._failed = null;
+}
+PageMethods.prototype = {
+GetCompletionList:function(prefixText,count,succeededCallback, failedCallback, userContext) {
+return this._invoke(PageMethods.get_path(), 'GetCompletionList',false,{prefixText:prefixText,count:count},succeededCallback,failedCallback,userContext); }}
+PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+PageMethods._staticInstance = new PageMethods();
+PageMethods.set_path = function(value) { PageMethods._staticInstance._path = value; }
+PageMethods.get_path = function() { return PageMethods._staticInstance._path; }
+PageMethods.set_timeout = function(value) { PageMethods._staticInstance._timeout = value; }
+PageMethods.get_timeout = function() { return PageMethods._staticInstance._timeout; }
+PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance._userContext = value; }
+PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance._userContext; }
+PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance._succeeded = value; }
+PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance._succeeded; }
+PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance._failed = value; }
+PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance._failed; }
+PageMethods.set_path("/Details/Summary.aspx");
+PageMethods.GetCompletionList= function(prefixText,count,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetCompletionList(prefixText,count,onSuccess,onFailed,userContext); }
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="BakO5HfIeTt-lL_LYioGMD0XUB7OWkUBXOYOq9PCRDGMsNUBtWN15TXllWhQNV86LPufOy6HLKZ5c3BGSpxZEjsO7R784_HGkwCQYDtUqgg-Q_Yu0" />
+</div>
+	<div style="width: 876px; margin: auto">
+		<div style="overflow: hidden; padding-bottom: 10px">
+			<div style="float: left; width: 265px; margin-bottom: 10px; padding-left: 11px;">
+				<a id="ctl00_HomeLink1" href="../Default.aspx"><img id="ctl00_CEFConnectLogoImage" src="../images/logo_cefconnect.gif" style="height:49px;width:236px;border-width:0px;" /></a></div>
+			<div style="float: left; width: 324px;">
+				<a href="javascript:openWindow('http://www.nuveen.com/cef','NuveenCEF')">
+					<img id="ctl00_NuveenCEFImage" src="../images/logo_nuveen_cef.gif" alt="Brought to you by Nuveen Closed-End Funds" style="height:33px;width:261px;border-width:0px;" /></a></div>
+			<div class="searchbox" style="float: left; width: 276px; height: 34px;">
+				<div id="ctl00_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_ibSearch')">
+	
+					<table border="0" cellpadding="0" cellspacing="0" style="margin: 5px">
+						<tr>
+							<td>
+								<input name="ctl00$txtSearch" type="text" value="Enter Ticker or Keyword(s)" id="ctl00_txtSearch" class="header1" autocomplete="off" onFocus="this.value=''" style="height:18px;" />
+							</td>
+							<td>
+								<input type="image" name="ctl00$ibSearch" id="ctl00_ibSearch" src="../images/button_quicksearch.gif" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ibSearch&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../Search/Results.aspx&quot;, false, false))" style="height:24px;width:99px;border-width:0px;" />
+								<script language="javascript" type="text/javascript">
+                    <!--
+									function OnSearchClientItemSelected(source, eventArgs) {
+										window.location = 'Summary.aspx?ticker=' + eventArgs.get_value();
+									}
+                    //-->
+								</script>
+								
+							</td>
+						</tr>
+					</table>
+				
+</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+//]]>
+</script>
+
+		<div id="ctl00_UpdateProgress1" style="display:none;">
+	
+				<span class="ProgressTemplateBack"></span><span class="ProgressTemplateAlert">
+					<img id="ctl00_Image1" src="../images/progress_bar.gif" style="border-width:0px;" />
+				</span>
+			
+</div>
+		
+			<table border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 5px">
+				<tr>
+					<td valign="bottom">
+						<a id="ctl00_header_NavHomeLink" href="../Default.aspx">
+            <img alt="View Home" src='../images/nav_home_off.gif' onmouseout="this.src='../images/nav_home_off.gif'" onmouseover="this.src='../images/nav_home_on.gif'"  Height="33" Width="113" style="height:33px;width:113px;border-width:0px;" />
+						</a>
+					</td>
+					<td valign="bottom">
+						<a id="ctl00_header_NavPricingLink" href="../Pricing/DailyPricing.aspx">
+            <img alt="View Daily Pricing" src='../images/nav_dailypricing_off.gif' onmouseout="this.src='../images/nav_dailypricing_off.gif'" onmouseover="this.src='../images/nav_dailypricing_on.gif'"  Width="181" Height="33" style="height:33px;width:181px;border-width:0px;" />
+						</a>
+					</td>
+					<td valign="bottom">
+						<a id="ctl00_header_NavScreenerLink" href="../Screener/FundScreener.aspx">
+            <img alt="View Fund Screener" src='../images/nav_fundscreener_off.gif' onmouseout="this.src='../images/nav_fundscreener_off.gif'" onmouseover="this.src='../images/nav_fundscreener_on.gif'"  Width="190" Height="33" style="height:33px;width:190px;border-width:0px;" />
+						</a>
+					</td>
+					<td valign="bottom">
+						<a id="ctl00_header_NavSorterLink" href="../Sorter/FundSorter.aspx">
+            <img alt="View Fund Sorter" src='../images/nav_fundsorter_off.gif' onmouseout="this.src='../images/nav_fundsorter_off.gif'" onmouseover="this.src='../images/nav_fundsorter_on.gif'"  Width="177" Height="33" style="height:33px;width:177px;border-width:0px;" />
+						</a>
+					</td>
+					<td valign="bottom">
+						<a id="ctl00_header_NavEducationLink" href="../Education/EducationCEF.aspx">
+            <img alt="View Education" src='../images/nav_education_off.gif' onmouseout="this.src='../images/nav_education_off.gif'" onmouseover="this.src='../images/nav_education_on.gif'"  Width="215" Height="33" style="height:33px;width:215px;border-width:0px;" />
+						</a>
+					</td>
+				</tr>
+			</table>
+		
+		
+			<div style="overflow: hidden; margin-bottom: 10px;">
+				<span style="margin-right: 50px">
+					<a href="../User/Login.aspx">LOGIN</a></span> First time visitor?
+					<a href="../User/Signup.aspx">REGISTER</a>
+					to access enhanced features 
+				
+			</div>
+		
+		<div>
+			
+	<script type="text/javascript">
+		var isPriceTabLoaded = false;
+		var isDistTabLoaded = false;
+		var isPerfTabLoaded = false;
+		var isCharTabLoaded = false;
+		function setInitDisclosures() {
+			hideElement('ctl00_contents_PriceRiskLabel');
+			hideElement('ctl00_contents_DistrRiskLabel');
+		}
+		function clientActiveTabChanged(sender, args) {
+
+			if (sender.get_activeTabIndex() == 0) {
+				hideElement('ctl00_contents_PriceRiskLabel');
+				hideElement('ctl00_contents_DistrRiskLabel');
+			}
+			if (sender.get_activeTabIndex() == 1) {
+				hideElement('ctl00_contents_PriceRiskLabel');
+				showElement('ctl00_contents_DistrRiskLabel');
+				//  if the tab does not exist and it is the active tab, 
+				//  trigger the async-postback to load tab
+				if (!isDistTabLoaded) {
+					isDistTabLoaded = true;
+					__doPostBack('ctl00$contents$btnDistTabTrigger', '');
+				}
+			}
+			else if (sender.get_activeTabIndex() == 2) {
+				showElement('ctl00_contents_PriceRiskLabel');
+				hideElement('ctl00_contents_DistrRiskLabel');
+				if (!isPriceTabLoaded) {
+					isPriceTabLoaded = true;
+					__doPostBack('ctl00$contents$btnPriceTabTrigger', '');
+				}
+			}
+			else if (sender.get_activeTabIndex() == 3) {
+				hideElement('ctl00_contents_PriceRiskLabel');
+				hideElement('ctl00_contents_DistrRiskLabel');
+				if (!isPerfTabLoaded) {
+					isPerfTabLoaded = true;
+					__doPostBack('ctl00$contents$btnPerfTabTrigger', '');
+				}
+			}
+			else if (sender.get_activeTabIndex() == 4) {
+				hideElement('ctl00_contents_PriceRiskLabel');
+				hideElement('ctl00_contents_DistrRiskLabel');
+				if (!isCharTabLoaded) {
+					isCharTabLoaded = true;
+					__doPostBack('ctl00$contents$btnCharTabTrigger', '');
+				}
+			}
+		}
+		function OnChanged(sender, args) {
+			sender.get_clientStateField().value = sender.saveClientState();
+		}
+
+	</script>
+	<table cellpadding="0">
+		<tr>
+			<td colspan="3" class="subpage-top32">
+				<table cellpadding="0">
+					<tr>
+						<td width="28">
+						</td>
+						<td width="848" class="white16">
+							&laquo;<a id="ctl00_contents_BackLink" class="whitenav">Back</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="subpage-left">
+			</td>
+			<td width="858" bgcolor="#d9cfc1">
+				<table cellpadding="0" border="0">
+					<tr>
+						<td colspan="5" height="6">
+						</td>
+					</tr>
+					<tr>
+						<td width="8">
+						</td>
+						<td width="338" valign="top">
+							<table cellpadding="0" border="0">
+								<tr>
+									<td colspan="3">
+										<h1>
+											<span id="ctl00_contents_FundNameLabel"></span>
+											
+
+
+
+										</h1>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3" height="6">
+									</td>
+								</tr>
+								<tr>
+									<td width="50%" align="left">
+										<div id="ctl00_contents_ucAddToPortfolio_panelItems" class="fpanel" style="white-space:nowrap;">
+	
+    
+
+    
+            For registered users only<br /><br />
+            <div style="text-align:center">
+                <a href="../User/Login.aspx">Login</a> |
+                <a href="../User/Signup.aspx">Register</a>
+            </div>                           
+        
+
+
+</div>
+<a id="ctl00_contents_ucAddToPortfolio_hlAddToPortfolio" class="addtobutton"></a>
+
+
+									</td>
+									<td width="2%" align="left">
+										&nbsp;
+									</td>
+									<td width="48%" align="right" valign="top">
+										<a class="button" href="javascript:openWindow('SummaryPrint.aspx?print=true&ticker=ARCC','PrintDetailsARCC')"><span>PRINTABLE VIEW</span></a>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3" height="26">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<i>
+											<span id="ctl00_contents_AsOfLabel" class="tabs"></span></i>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3" height="6">
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<div>
+
+</div>
+										<div>
+
+</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+						<td width="13">
+						</td>
+						<td width="489" valign="top">
+							
+<table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="white">
+<tr>
+<td colspan="3">
+    <img alt="View Price History" src=""/>
+</td>
+</tr>
+<tr>
+<td width="5%">&nbsp;</td>
+<td align="center" width="45%">
+    <a id="ctl00_contents_PriceChart_Button5D" title="Show 5 day chart" class="chart" href="javascript:__doPostBack('ctl00$contents$PriceChart$Button5D','')" style="display:inline-block;height:25px;width:30px;">5D</a>
+    <a id="ctl00_contents_PriceChart_Button1M" title="Show 1 month chart" class="chart" href="javascript:__doPostBack('ctl00$contents$PriceChart$Button1M','')" style="display:inline-block;height:25px;width:30px;">1M</a>
+    <a id="ctl00_contents_PriceChart_ButtonYTD" title="Show year to date chart" class="chart" href="javascript:__doPostBack('ctl00$contents$PriceChart$ButtonYTD','')" style="display:inline-block;height:25px;width:30px;">YTD</a>
+    <a id="ctl00_contents_PriceChart_Button1Y" title="Show 1 year chart" class="chart_on" href="javascript:__doPostBack('ctl00$contents$PriceChart$Button1Y','')" style="display:inline-block;height:25px;width:30px;">1Y</a>
+    <a id="ctl00_contents_PriceChart_Button3Y" title="Show 3 year chart" class="chart" href="javascript:__doPostBack('ctl00$contents$PriceChart$Button3Y','')" style="display:inline-block;height:25px;width:30px;">3Y</a>
+    <a id="ctl00_contents_PriceChart_Button5Y" title="Show 5 year chart" class="chart" href="javascript:__doPostBack('ctl00$contents$PriceChart$Button5Y','')" style="display:inline-block;height:25px;width:30px;">5Y</a>
+</td>
+<td align="left" width="50%">
+    <a id="ctl00_contents_PriceChart_IntChartLink" class="button"><span>Interactive Chart</span></a>
+</td>
+</tr>
+<tr>
+<td width="5%">&nbsp;</td>
+<td align="center" width="85%">
+    <a id="ctl00_contents_PriceChart_ButtonAll" title="Show chart since inception" class="chart" href="javascript:__doPostBack('ctl00$contents$PriceChart$ButtonAll','')" style="display:inline-block;height:25px;width:100px;">Since Inception</a>
+</td>
+<td align="right" width="10%"></td>
+</tr>
+</table>
+
+						</td>
+						<td width="8">
+						</td>
+					</tr>
+					<tr>
+						<td height="10" colspan="5">
+						</td>
+					</tr>
+				</table>
+				<input onclick="__doPostBack('ctl00$contents$btnDistTabTrigger','')" name="ctl00$contents$btnDistTabTrigger" type="button" id="ctl00_contents_btnDistTabTrigger" style="display: none" />
+				<input onclick="__doPostBack('ctl00$contents$btnPriceTabTrigger','')" name="ctl00$contents$btnPriceTabTrigger" type="button" id="ctl00_contents_btnPriceTabTrigger" style="display: none" />
+				<input onclick="__doPostBack('ctl00$contents$btnPerfTabTrigger','')" name="ctl00$contents$btnPerfTabTrigger" type="button" id="ctl00_contents_btnPerfTabTrigger" style="display: none" />
+				<input onclick="__doPostBack('ctl00$contents$btnCharTabTrigger','')" name="ctl00$contents$btnCharTabTrigger" type="button" id="ctl00_contents_btnCharTabTrigger" style="display: none" />
+				<div id="ctl00_contents_SummaryContainer" class="ajax__tab_xp" style="width:100%;visibility:hidden;">
+	<div id="ctl00_contents_SummaryContainer_header">
+		<span id="__tab_ctl00_contents_SummaryContainer_BasicsTab">
+							Fund Basics
+						</span><span id="__tab_ctl00_contents_SummaryContainer_DistributionsTab">Distributions</span><span id="__tab_ctl00_contents_SummaryContainer_PricingTab">Pricing History</span><span id="__tab_ctl00_contents_SummaryContainer_PerformanceTab">Performance</span><span id="__tab_ctl00_contents_SummaryContainer_CharateristicsTab">Portfolio Characteristics</span>
+	</div><div id="ctl00_contents_SummaryContainer_body">
+		<div id="ctl00_contents_SummaryContainer_BasicsTab" style="display:none;visibility:hidden;">
+			
+							
+
+<table cellpadding="0" border="0">		
+	<tr>
+		<td width="390" valign="top">
+			<div>
+				<table cellspacing="0" cellpadding="5" border="0" id="ctl00_contents_SummaryContainer_BasicsTab_ucFundBasics_dvFB1" style="background-color:White;width:100%;border-collapse:collapse;">
+					<tr>
+						<td>ERROR: No data</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+		<td width="40">&nbsp;</td>
+		<td width="390" valign="top">
+			<div>
+				<table cellspacing="0" cellpadding="5" border="0" id="ctl00_contents_SummaryContainer_BasicsTab_ucFundBasics_dvFB2" style="background-color:White;width:100%;border-collapse:collapse;">
+					<tr>
+						<td>ERROR: No data</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+	</tr>
+	<tr><td colspan="2" height="14"></td></tr>
+</table>
+			
+
+
+
+
+
+						
+		</div><div id="ctl00_contents_SummaryContainer_DistributionsTab" style="display:none;visibility:hidden;">
+			
+							
+
+<table cellpadding="0" border="0" width="100%">
+<tr>
+    <td class="tabs">
+
+    <div style="float:left;"><i>As of <span id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_lblAsOf"></span></i></div>
+    <div style="float:right;"><a id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_lbCollapse" href="javascript:__doPostBack('ctl00$contents$SummaryContainer$DistributionsTab$ucDistributions$lbCollapse','')">Distribution History Since Inception</a></div>
+    <div style="clear: both;"></div>
+    
+    <input type="hidden" name="ctl00$contents$SummaryContainer$DistributionsTab$ucDistributions$cpe_ClientState" id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_cpe_ClientState" />
+    </td>
+</tr>
+     
+<tr>
+    <td>
+        <div id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_pnlInception">
+				
+        <img alt="View distributions since inception" src="../Charter/Charter.aspx?cusip=&type=DistributionCharter&parm0=All&R=143"/>
+        
+			</div>
+    </td>
+</tr>
+</table>
+<table>
+<tr>
+<td align="center" width="100%">
+    <img alt="View distributions for the past year" src="../Charter/Charter.aspx?cusip=&type=DistributionCharter&parm0=1Y&R=100"/>
+</td>
+</tr>
+</table>
+   
+<table cellpadding="0" bgcolor="#ffffff">
+	<tr><td colspan="3" height="16"></td></tr>
+	
+	<tr>
+	<td width="60%" valign="top">
+	
+		    <table cellpadding="0" border="0">	
+		<tr bgcolor="#d9eff0"><td height="32"><h5>Distribution History</h5></td></tr>		
+		<tr>
+		<td class="tabs">
+		</td>
+		</tr>
+		<tr>
+		<td class="tabs">
+		    <table border="0">
+		        <tr>
+		        <td>Display History</td>
+		        <td>
+			        <div id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_wrapper" class="pickerWrapper_Default2006" style="display:inline-block;height:20px;width:90px;display: block;">
+				<!-- 2.2.2 --><input name="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1" type="hidden" id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1" value="2008-05-01" /><script type="text/javascript" src="/WebResource.axd?d=ZThtGp4_Qnoz6dW63JrwQPUSLDVgvpRg-qwm8l8sAxcLLqJjhS9i_DJs5u9-xhNXlE6MKzx5iZ--9aY8h6OYymAuSzaBUp1-SGrCjRC4sZJ_L63EMfn-m5Ou2vqeOeLKmftHOekDaCyhXTG8eXQezRL4yChPSpUT5i-ekc_y-YN7BVpYhuCSMIINsSQezYJcJuF1gQ2&amp;t=633355801575013807"></script><table cellpadding="0" cellspacing="0" style="border-width:0;border-collapse:collapse;width:90px;">
+					<tr>
+						<td style="width:100%;"><div id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_dateInput_wrapper" class="radInput_Default" style="height:18px;WIDTH:100%;">
+	<!-- 2.1.2 --><script type="text/javascript" src="/WebResource.axd?d=T3RzakHEgUee9eZtmaGkPgxmQ-Nqr--6YasbvQny9ZZIXKprm08z1XL07iOnpFDZRFceBChiEi0YZWLAlKcBJmrpRRg49dQPrFGiFlI0B3Vb8Khe7xMEnu7n2IcoGqoeTkSprJhDxzPmh-zEPw0uT8yODco1vB7SJqUl6ZLJAf7P9Vu_0&amp;t=633355801579857526"></script><script type="text/javascript" src="/WebResource.axd?d=8WoE4ZO_fBfo2L4gp_pXr81dv3DMEUmGHv1elnOQsYfjA48sQIjA2VcUfHIq2DHrf8SSmQpLM2q9YdiuEWCzgXcn1CCOaL7Y_mOF_MoUCbmDIuiLucylgMY29d4rbYQTkWHICdvpqn45ABC6OSemz412z92vnQ63Y7RYowGlxcDkhMmH0&amp;t=633355801579857526"></script><span id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_dateInputStyleSheetHolder" style="display:none;"></span><table cellpadding="0" cellspacing="0" style="border-width:0;border-collapse:collapse;table-layout:fixed;width:100%;">
+		<tr>
+			<td class="inputCell" style="width:100%;"><input id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_dateInput_text" class="radEnabledCss_Default tabs" style="width:100%;" /><input style="visibility: hidden;position:absolute;right:0;width:0;height:0;overflow:hidden;border:0;padding:0;margin:0;" id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_dateInput" name="ctl00$contents$SummaryContainer$DistributionsTab$ucDistributions$Raddatepicker1$dateInput" type="text" value="2008-05-01-00-00-00" /></td>
+		</tr>
+	</table><script type="text/javascript">window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_dateInput"] = new RadDateInput("ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_dateInput", {"IncrementSettings":{"Step":1,"InterceptArrowKeys":true,"InterceptMouseWheel":true},"DateTimeFormatInfo":{"TimeSeparator":":","AMDesignator":"AM","PMDesignator":"PM","DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"FirstDayOfWeek":"Sunday","DateSeparator":"/","DateSlots":{"Month":0,"Year":2,"Day":1},"TimeInputOnly":false,"ShortYearCenturyEnd":2029},"DisplayDateFormat":"M/d/yyyy","DateFormat":"M/d/yyyy","MinDate":[1920,2,1,0,0,0],"MaxDate":[2099,12,16,0,0,0],"AutoPostBack":false,"EmptyMessage":"","SelectionOnFocus":0,"ClientEvents":{"OnError":"","OnButtonClick":"","OnLoad":"","OnMouseOut":"","OnMouseOver":"","OnFocus":"","OnBlur":"","OnDisable":"","OnEnable":"","OnValueChanged":"","OnKeyPress":"GoDistClicked","OnEnumerationChanged":"","OnMoveUp":"","OnMoveDown":"","OnShowHint":""},"ShowButton":false,"ButtonsPosition":1,"Enabled":true,"PostBackEventReferenceScript":"__doPostBack('ctl00$contents$SummaryContainer$DistributionsTab$ucDistributions$Raddatepicker1','')"}, {HoveredStyle: ["width:100%;", "radHoverCss_Default tabs"],InvalidStyle: ["width:100%;", "radInvalidCss_Default tabs"],DisabledStyle: ["width:100%;", "radDisabledCss_Default tabs"],FocusedStyle: ["width:100%;", "radFocusedCss_Default tabs"],EmptyMessageStyle: ["width:100%;", "radEmptyMessageCss_Default tabs"],EnabledStyle: ["width:100%;", "radEnabledCss_Default tabs"]});RadDatePicker.InitializeDateInput(window['ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1']);</script>
+</div></td><td><a title="Open the calendar popup." href="#" id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_popupButton" class="radPopupImage_Default2006"><img id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_CalendarPopupButton" src="../RadControls/Calendar/Skins/Default2006/Img/datePickerPopup.gif" alt="Open the calendar popup." style="border-width:0px;" /></a><div id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_wrapper" style="display: none" ><!-- 2.2.2 --><span id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendarStyleSheetHolder" style="display:none;"></span><table id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar" cellspacing="0" cellpadding="0" summary="Telerik RadCalendar instance" class="calendarWrapper_Default2006" border="0" style="border-color:Black;border-width:1px;border-style:solid;border-collapse:collapse;">
+							<tbody><tr>
+								<td colspan="3" style="vertical-align:top;white-space:nowrap;"><table class="titlebar_Default2006" cellspacing="0" cellpadding="3" summary="Telerik RadCalendar title and navigation controls" border="0" style="background-color:#009196;border-collapse:collapse;">
+									<tbody><tr>
+										<td><a id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_FNP" onclick="return false;" href="#"><img src="/RadControls/Calendar/Skins/Default2006/Img/fastNavLeft.gif" alt="&lt;&lt;" style="border:0px;" /></a></td><td><a id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_NP" onclick="return false;" href="#"><img src="/RadControls/Calendar/Skins/Default2006/Img/arrowLeft.gif" alt="&lt;" style="border:0px;" /></a></td><td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Title" style="width:100%;text-align:center;white-space:nowrap;">May 2013</td><td><a id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_NN" onclick="return false;" href="#"><img src="/RadControls/Calendar/Skins/Default2006/Img/arrowRight.gif" alt=">" style="border:0px;" /></a></td><td><a id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_FNN" onclick="return false;" href="#"><img src="/RadControls/Calendar/Skins/Default2006/Img/fastNavRight.gif" alt=">>" style="border:0px;" /></a></td>
+									</tr></tbody>
+								</table></td>
+							</tr><tr>
+								<td colspan="3" style="height:100%;"><table id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top" class="TableLayout_Default2006" cellspacing="3" cellpadding="3" summary="May 2013" border="0" style="background-color:White;">
+	<tbody><tr>
+		<th class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;"></th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top_cs_1" title="Sunday" class="DaysOfWeek_Default2006" abbr="day Sunday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">S</th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top_cs_2" title="Monday" class="DaysOfWeek_Default2006" abbr="day Monday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">M</th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top_cs_3" title="Tuesday" class="DaysOfWeek_Default2006" abbr="day Tuesday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">T</th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top_cs_4" title="Wednesday" class="DaysOfWeek_Default2006" abbr="day Wednesday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">W</th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top_cs_5" title="Thursday" class="DaysOfWeek_Default2006" abbr="day Thursday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">T</th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top_cs_6" title="Friday" class="DaysOfWeek_Default2006" abbr="day Friday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">F</th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top_cs_7" title="Saturday" class="DaysOfWeek_Default2006" abbr="day Saturday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">S</th>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top_rs_1" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">18</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="radCalDefault_Default2006" title="Wednesday, May 01, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >1</a></td><td class="radCalDefault_Default2006" title="Thursday, May 02, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >2</a></td><td class="radCalDefault_Default2006" title="Friday, May 03, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >3</a></td><td class="radCalWeekendDefault_Default2006" title="Saturday, May 04, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >4</a></td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top_rs_2" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">19</td><td class="radCalWeekendDefault_Default2006" title="Sunday, May 05, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >5</a></td><td class="radCalDefault_Default2006" title="Monday, May 06, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >6</a></td><td class="radCalDefault_Default2006" title="Tuesday, May 07, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >7</a></td><td class="radCalDefault_Default2006" title="Wednesday, May 08, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >8</a></td><td class="radCalDefault_Default2006" title="Thursday, May 09, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >9</a></td><td class="radCalDefault_Default2006" title="Friday, May 10, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >10</a></td><td class="radCalWeekendDefault_Default2006" title="Saturday, May 11, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >11</a></td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top_rs_3" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">20</td><td class="radCalWeekendDefault_Default2006" title="Sunday, May 12, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >12</a></td><td class="radCalDefault_Default2006" title="Monday, May 13, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >13</a></td><td class="radCalDefault_Default2006" title="Tuesday, May 14, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >14</a></td><td class="radCalDefault_Default2006" title="Wednesday, May 15, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >15</a></td><td class="radCalDefault_Default2006" title="Thursday, May 16, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >16</a></td><td class="radCalDefault_Default2006" title="Friday, May 17, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >17</a></td><td class="radCalWeekendDefault_Default2006" title="Saturday, May 18, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >18</a></td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top_rs_4" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">21</td><td class="radCalWeekendDefault_Default2006" title="Sunday, May 19, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >19</a></td><td class="radCalDefault_Default2006" title="Monday, May 20, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >20</a></td><td class="radCalDefault_Default2006" title="Tuesday, May 21, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >21</a></td><td class="radCalDefault_Default2006" title="Wednesday, May 22, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >22</a></td><td class="radCalDefault_Default2006" title="Thursday, May 23, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >23</a></td><td class="radCalDefault_Default2006" title="Friday, May 24, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >24</a></td><td class="radCalWeekendDefault_Default2006" title="Saturday, May 25, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >25</a></td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top_rs_5" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">22</td><td class="radCalWeekendDefault_Default2006" title="Sunday, May 26, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >26</a></td><td class="radCalDefault_Default2006" title="Monday, May 27, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >27</a></td><td class="radCalDefault_Default2006" title="Tuesday, May 28, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >28</a></td><td class="radCalDefault_Default2006" title="Wednesday, May 29, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >29</a></td><td class="radCalDefault_Default2006" title="Thursday, May 30, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >30</a></td><td class="radCalDefault_Default2006" title="Friday, May 31, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >31</a></td><td class="otherMonth_Default2006">&#160;</td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top_rs_6" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">23</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td>
+	</tr></tbody>
+</table></td>
+							</tr></tbody>
+						</table><input type="hidden" name="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_SD" id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_SD" value="[]" /><input type="hidden" name="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_AD" id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_AD" value="[[1920,2,1],[2099,12,16],[2013,5,17]]" /><script type="text/javascript">
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_CDFI"] = [["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],["January","February","March","April","May","June","July","August","September","October","November","December",],["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",],"dddd, MMMM dd, yyyy h:mm:ss tt","dddd, MMMM dd, yyyy","h:mm:ss tt","MMMM dd","ddd, dd MMM yyyy HH\':\'mm\':\'ss \'GMT\'","M/d/yyyy","h:mm tt","yyyy\'-\'MM\'-\'dd\'T\'HH\':\'mm\':\'ss","yyyy\'-\'MM\'-\'dd HH\':\'mm\':\'ss\'Z\'","MMMM, yyyy","AM","PM","/",":",0];
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_CSD"] = [];
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_CE"] = [,,,,,,,,,,];
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Views"] = {ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Top : [[2013,5,1], 1]};
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Data"] = ["__doPostBack(\'ctl00$contents$SummaryContainer$DistributionsTab$ucDistributions$Raddatepicker1$calendar\',\'@@\')","ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar",1,1,1,1,0,0,0,0,0,0,0,7,6,1,1,3,7,"Default2006",,0,0,0,"%d",2,2,3,3,1,1,2,"MMMM yyyy","dddd, MMMM dd, yyyy"," - ",0,1,0,1,0,1];
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_MYFN"] = ["Today","OK","Cancel","Date is out of range.","False"];
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_STL"] = {DayStyle: ["border-color:Black;", "radCalDefault_Default2006"],CalendarTableStyle: ["background-color:White;", "TableLayout_Default2006"],OtherMonthDayStyle: ["", "otherMonth_Default2006"],TitleStyle: ["background-color:#009196;", "titlebar_Default2006"],SelectedDayStyle: ["background-color:Orange;", "radCalSelect_Default2006"],SelectorStyle: ["background-color:#D9CFC1;border-width:1px;border-style:solid;", "DaysOfWeek_Default2006"],DisabledDayStyle: ["", "radCalDisable_Default2006"],OutOfRangeDayStyle: ["border-color:MintCream;", "outOfRange_Default2006"],WeekendDayStyle: ["border-color:Black;", "radCalWeekendDefault_Default2006"],DayOverStyle: ["color:#C0FFFF;background-color:SlateGray;font-weight:bold;", "radCalHover_Default2006"],FastNavigationStyle: ["", "MonthYearFastNav_Default2006"]};
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_RCC"] = {};
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_VRP"] = {};
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar"] =  new RadCalendar(window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_CDFI"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_CSD"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_CE"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Data"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_Views"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_MYFN"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_STL"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_RCC"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_VRP"]);
+
+
+</script>
+</div></td>
+					</tr>
+				</table><script type="text/javascript">/*<![CDATA[
+*/window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1"] = new RadDatePicker("ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1");window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1"].Initialize({"DateInputID":"ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_dateInput","CalendarID":"ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar","PopupContainerID":"ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_calendar_wrapper","PopupControlID":"ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker1_popupButton","PopupButtonSettings":{"ResolvedImageUrl":"/RadControls/Calendar/Skins/Default2006/Img/datePickerPopup.gif","ResolvedHoverImageUrl":"/RadControls/Calendar/Skins/Default2006/Img/datePickerPopupHover.gif"},"PopupButtonSettings":{"ResolvedImageUrl":"/RadControls/Calendar/Skins/Default2006/Img/datePickerPopup.gif","ResolvedHoverImageUrl":"/RadControls/Calendar/Skins/Default2006/Img/datePickerPopupHover.gif"},"MinDate":[1920,2,1,0,0,0],"MaxDate":[2099,12,16,0,0,0],"FocusedDate":[2006,2,1,0,0,0],"ClientEvents":{"OnPopupUpdating":"","OnDateSelected":"","TypingTimeOut":2000,"OnPopupOpening":"","OnPopupClosing":""}});/*]]>*/</script>
+			</div>
+			    </td>
+			    <td> &nbsp; to &nbsp; </td> 
+			    <td>		        
+			        <div id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_wrapper" class="pickerWrapper_Default2006" style="display:inline-block;height:20px;width:90px;display: block;">
+				<!-- 2.2.2 --><input name="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2" type="hidden" id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2" value="2009-06-02" /><table cellpadding="0" cellspacing="0" style="border-width:0;border-collapse:collapse;width:90px;">
+					<tr>
+						<td style="width:100%;"><div id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_dateInput_wrapper" class="radInput_Default" style="height:18px;WIDTH:100%;">
+	<!-- 2.1.2 --><span id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_dateInputStyleSheetHolder" style="display:none;"></span><table cellpadding="0" cellspacing="0" style="border-width:0;border-collapse:collapse;table-layout:fixed;width:100%;">
+		<tr>
+			<td class="inputCell" style="width:100%;"><input id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_dateInput_text" class="radEnabledCss_Default tabs" style="width:100%;" /><input style="visibility: hidden;position:absolute;right:0;width:0;height:0;overflow:hidden;border:0;padding:0;margin:0;" id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_dateInput" name="ctl00$contents$SummaryContainer$DistributionsTab$ucDistributions$Raddatepicker2$dateInput" type="text" value="2009-06-02-00-00-00" /></td>
+		</tr>
+	</table><script type="text/javascript">window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_dateInput"] = new RadDateInput("ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_dateInput", {"IncrementSettings":{"Step":1,"InterceptArrowKeys":true,"InterceptMouseWheel":true},"DateTimeFormatInfo":{"TimeSeparator":":","AMDesignator":"AM","PMDesignator":"PM","DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"FirstDayOfWeek":"Sunday","DateSeparator":"/","DateSlots":{"Month":0,"Year":2,"Day":1},"TimeInputOnly":false,"ShortYearCenturyEnd":2029},"DisplayDateFormat":"M/d/yyyy","DateFormat":"M/d/yyyy","MinDate":[1920,2,1,0,0,0],"MaxDate":[2099,12,16,0,0,0],"AutoPostBack":false,"EmptyMessage":"","SelectionOnFocus":0,"ClientEvents":{"OnError":"","OnButtonClick":"","OnLoad":"","OnMouseOut":"","OnMouseOver":"","OnFocus":"","OnBlur":"","OnDisable":"","OnEnable":"","OnValueChanged":"","OnKeyPress":"GoDistClicked","OnEnumerationChanged":"","OnMoveUp":"","OnMoveDown":"","OnShowHint":""},"ShowButton":false,"ButtonsPosition":1,"Enabled":true,"PostBackEventReferenceScript":"__doPostBack('ctl00$contents$SummaryContainer$DistributionsTab$ucDistributions$Raddatepicker2','')"}, {HoveredStyle: ["width:100%;", "radHoverCss_Default tabs"],InvalidStyle: ["width:100%;", "radInvalidCss_Default tabs"],DisabledStyle: ["width:100%;", "radDisabledCss_Default tabs"],FocusedStyle: ["width:100%;", "radFocusedCss_Default tabs"],EmptyMessageStyle: ["width:100%;", "radEmptyMessageCss_Default tabs"],EnabledStyle: ["width:100%;", "radEnabledCss_Default tabs"]});RadDatePicker.InitializeDateInput(window['ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2']);</script>
+</div></td><td><a title="Open the calendar popup." href="#" id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_popupButton" class="radPopupImage_Default2006"><img id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_CalendarPopupButton" src="../RadControls/Calendar/Skins/Default2006/Img/datePickerPopup.gif" alt="Open the calendar popup." style="border-width:0px;" /></a><div id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_wrapper" style="display: none" ><!-- 2.2.2 --><span id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendarStyleSheetHolder" style="display:none;"></span><table id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar" cellspacing="0" cellpadding="0" summary="Telerik RadCalendar instance" class="calendarWrapper_Default2006" border="0" style="border-color:Black;border-width:1px;border-style:solid;border-collapse:collapse;">
+							<tbody><tr>
+								<td colspan="3" style="vertical-align:top;white-space:nowrap;"><table class="titlebar_Default2006" cellspacing="0" cellpadding="3" summary="Telerik RadCalendar title and navigation controls" border="0" style="background-color:#009196;border-collapse:collapse;">
+									<tbody><tr>
+										<td><a id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_FNP" onclick="return false;" href="#"><img src="/RadControls/Calendar/Skins/Default2006/Img/fastNavLeft.gif" alt="&lt;&lt;" style="border:0px;" /></a></td><td><a id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_NP" onclick="return false;" href="#"><img src="/RadControls/Calendar/Skins/Default2006/Img/arrowLeft.gif" alt="&lt;" style="border:0px;" /></a></td><td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Title" style="width:100%;text-align:center;white-space:nowrap;">May 2013</td><td><a id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_NN" onclick="return false;" href="#"><img src="/RadControls/Calendar/Skins/Default2006/Img/arrowRight.gif" alt=">" style="border:0px;" /></a></td><td><a id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_FNN" onclick="return false;" href="#"><img src="/RadControls/Calendar/Skins/Default2006/Img/fastNavRight.gif" alt=">>" style="border:0px;" /></a></td>
+									</tr></tbody>
+								</table></td>
+							</tr><tr>
+								<td colspan="3" style="height:100%;"><table id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top" class="TableLayout_Default2006" cellspacing="3" cellpadding="3" summary="May 2013" border="0" style="background-color:White;">
+	<tbody><tr>
+		<th class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;"></th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top_cs_1" title="Sunday" class="DaysOfWeek_Default2006" abbr="day Sunday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">S</th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top_cs_2" title="Monday" class="DaysOfWeek_Default2006" abbr="day Monday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">M</th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top_cs_3" title="Tuesday" class="DaysOfWeek_Default2006" abbr="day Tuesday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">T</th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top_cs_4" title="Wednesday" class="DaysOfWeek_Default2006" abbr="day Wednesday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">W</th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top_cs_5" title="Thursday" class="DaysOfWeek_Default2006" abbr="day Thursday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">T</th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top_cs_6" title="Friday" class="DaysOfWeek_Default2006" abbr="day Friday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">F</th><th id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top_cs_7" title="Saturday" class="DaysOfWeek_Default2006" abbr="day Saturday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">S</th>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top_rs_1" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">18</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="radCalDefault_Default2006" title="Wednesday, May 01, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >1</a></td><td class="radCalDefault_Default2006" title="Thursday, May 02, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >2</a></td><td class="radCalDefault_Default2006" title="Friday, May 03, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >3</a></td><td class="radCalWeekendDefault_Default2006" title="Saturday, May 04, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >4</a></td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top_rs_2" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">19</td><td class="radCalWeekendDefault_Default2006" title="Sunday, May 05, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >5</a></td><td class="radCalDefault_Default2006" title="Monday, May 06, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >6</a></td><td class="radCalDefault_Default2006" title="Tuesday, May 07, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >7</a></td><td class="radCalDefault_Default2006" title="Wednesday, May 08, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >8</a></td><td class="radCalDefault_Default2006" title="Thursday, May 09, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >9</a></td><td class="radCalDefault_Default2006" title="Friday, May 10, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >10</a></td><td class="radCalWeekendDefault_Default2006" title="Saturday, May 11, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >11</a></td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top_rs_3" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">20</td><td class="radCalWeekendDefault_Default2006" title="Sunday, May 12, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >12</a></td><td class="radCalDefault_Default2006" title="Monday, May 13, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >13</a></td><td class="radCalDefault_Default2006" title="Tuesday, May 14, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >14</a></td><td class="radCalDefault_Default2006" title="Wednesday, May 15, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >15</a></td><td class="radCalDefault_Default2006" title="Thursday, May 16, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >16</a></td><td class="radCalDefault_Default2006" title="Friday, May 17, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >17</a></td><td class="radCalWeekendDefault_Default2006" title="Saturday, May 18, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >18</a></td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top_rs_4" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">21</td><td class="radCalWeekendDefault_Default2006" title="Sunday, May 19, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >19</a></td><td class="radCalDefault_Default2006" title="Monday, May 20, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >20</a></td><td class="radCalDefault_Default2006" title="Tuesday, May 21, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >21</a></td><td class="radCalDefault_Default2006" title="Wednesday, May 22, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >22</a></td><td class="radCalDefault_Default2006" title="Thursday, May 23, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >23</a></td><td class="radCalDefault_Default2006" title="Friday, May 24, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >24</a></td><td class="radCalWeekendDefault_Default2006" title="Saturday, May 25, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >25</a></td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top_rs_5" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">22</td><td class="radCalWeekendDefault_Default2006" title="Sunday, May 26, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >26</a></td><td class="radCalDefault_Default2006" title="Monday, May 27, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >27</a></td><td class="radCalDefault_Default2006" title="Tuesday, May 28, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >28</a></td><td class="radCalDefault_Default2006" title="Wednesday, May 29, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >29</a></td><td class="radCalDefault_Default2006" title="Thursday, May 30, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >30</a></td><td class="radCalDefault_Default2006" title="Friday, May 31, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >31</a></td><td class="otherMonth_Default2006">&#160;</td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top_rs_6" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">23</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td>
+	</tr></tbody>
+</table></td>
+							</tr></tbody>
+						</table><input type="hidden" name="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_SD" id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_SD" value="[]" /><input type="hidden" name="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_AD" id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_AD" value="[[1920,2,1],[2099,12,16],[2013,5,17]]" /><script type="text/javascript">
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_CDFI"] = [["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],["January","February","March","April","May","June","July","August","September","October","November","December",],["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",],"dddd, MMMM dd, yyyy h:mm:ss tt","dddd, MMMM dd, yyyy","h:mm:ss tt","MMMM dd","ddd, dd MMM yyyy HH\':\'mm\':\'ss \'GMT\'","M/d/yyyy","h:mm tt","yyyy\'-\'MM\'-\'dd\'T\'HH\':\'mm\':\'ss","yyyy\'-\'MM\'-\'dd HH\':\'mm\':\'ss\'Z\'","MMMM, yyyy","AM","PM","/",":",0];
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_CSD"] = [];
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_CE"] = [,,,,,,,,,,];
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Views"] = {ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Top : [[2013,5,1], 1]};
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Data"] = ["__doPostBack(\'ctl00$contents$SummaryContainer$DistributionsTab$ucDistributions$Raddatepicker2$calendar\',\'@@\')","ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar",1,1,1,1,0,0,0,0,0,0,0,7,6,1,1,3,7,"Default2006",,0,0,0,"%d",2,2,3,3,1,1,2,"MMMM yyyy","dddd, MMMM dd, yyyy"," - ",0,1,0,1,0,1];
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_MYFN"] = ["Today","OK","Cancel","Date is out of range.","False"];
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_STL"] = {DayStyle: ["border-color:Black;", "radCalDefault_Default2006"],CalendarTableStyle: ["background-color:White;", "TableLayout_Default2006"],OtherMonthDayStyle: ["", "otherMonth_Default2006"],TitleStyle: ["background-color:#009196;", "titlebar_Default2006"],SelectedDayStyle: ["background-color:Orange;", "radCalSelect_Default2006"],SelectorStyle: ["background-color:#D9CFC1;border-width:1px;border-style:solid;", "DaysOfWeek_Default2006"],DisabledDayStyle: ["", "radCalDisable_Default2006"],OutOfRangeDayStyle: ["border-color:MintCream;", "outOfRange_Default2006"],WeekendDayStyle: ["border-color:Black;", "radCalWeekendDefault_Default2006"],DayOverStyle: ["color:#C0FFFF;background-color:SlateGray;font-weight:bold;", "radCalHover_Default2006"],FastNavigationStyle: ["", "MonthYearFastNav_Default2006"]};
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_RCC"] = {};
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_VRP"] = {};
+
+window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar"] =  new RadCalendar(window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_CDFI"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_CSD"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_CE"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Data"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_Views"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_MYFN"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_STL"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_RCC"],window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_VRP"]);
+
+
+</script>
+</div></td>
+					</tr>
+				</table><script type="text/javascript">/*<![CDATA[
+*/window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2"] = new RadDatePicker("ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2");window["ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2"].Initialize({"DateInputID":"ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_dateInput","CalendarID":"ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar","PopupContainerID":"ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_calendar_wrapper","PopupControlID":"ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_Raddatepicker2_popupButton","PopupButtonSettings":{"ResolvedImageUrl":"/RadControls/Calendar/Skins/Default2006/Img/datePickerPopup.gif","ResolvedHoverImageUrl":"/RadControls/Calendar/Skins/Default2006/Img/datePickerPopupHover.gif"},"PopupButtonSettings":{"ResolvedImageUrl":"/RadControls/Calendar/Skins/Default2006/Img/datePickerPopup.gif","ResolvedHoverImageUrl":"/RadControls/Calendar/Skins/Default2006/Img/datePickerPopupHover.gif"},"MinDate":[1920,2,1,0,0,0],"MaxDate":[2099,12,16,0,0,0],"FocusedDate":[2006,2,1,0,0,0],"ClientEvents":{"OnPopupUpdating":"","OnDateSelected":"","TypingTimeOut":2000,"OnPopupOpening":"","OnPopupClosing":""}});/*]]>*/</script>
+			</div>
+			    </td>
+			    <td><a id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_DistributionHistoryGo" class="buttongreensm" href="javascript:__doPostBack('ctl00$contents$SummaryContainer$DistributionsTab$ucDistributions$DistributionHistoryGo','')"><span>GO</span></a>
+			    </td>
+			    </tr>			   
+		    </table>			   	
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+		
+            <div>
+
+			</div>          		
+		</td>
+		</tr>
+						
+		</table>
+	
+	</td>
+	<td width="2%">&nbsp;</td>
+	<td width="38%" valign="top">
+
+        <div>
+				<table cellspacing="0" cellpadding="5" border="0" id="ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_dvFB1" style="background-color:White;width:100%;border-collapse:collapse;">
+					<tr>
+						<td>ERROR: No data</td>
+					</tr>
+				</table>
+			</div>
+	</td>
+	</tr>
+	
+	<tr><td colspan="3" height="14"></td></tr>
+</table>
+
+
+
+
+
+						
+		</div><div id="ctl00_contents_SummaryContainer_PricingTab" style="display:none;visibility:hidden;">
+			
+							
+
+<table cellspacing="5">
+<tr>
+    <td align="center" bgcolor="#d9eff0" colspan="2"><h5>Premium/Discount Information</h5></td>
+</tr>
+<tr>
+<td width="85%" valign="top" align="center">
+    <img alt="View Premium Discount History" src="../Charter/Charter.aspx?cusip=&type=DiscountCharter&parm0=1Y&R=253"/>
+</td>
+<td width="15%" valign="middle" align="left">
+    <table>
+    <tr>
+    <td><span id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_DiscAsOfLabel" class="tabs"></span></td>
+    <td align="right"></td>
+    </tr>
+    <tr><td colspan="2">
+    <div>
+
+			</div>
+    </td></tr>
+    </table>
+</td>
+</tr>
+<tr>
+<td width="85%" valign="top" align="center">
+    <a id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_DiscButton6M" title="Show 6 month chart" href="javascript:__doPostBack('ctl00$contents$SummaryContainer$PricingTab$ucPricing$DiscButton6M','')" style="display:inline-block;height:25px;width:30px;">6M</a>
+    <a id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_DiscButtonYTD" title="Show year to date chart" href="javascript:__doPostBack('ctl00$contents$SummaryContainer$PricingTab$ucPricing$DiscButtonYTD','')" style="display:inline-block;height:25px;width:30px;">YTD</a>
+    <a id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_DiscButton1Y" title="Show 1 year chart" href="javascript:__doPostBack('ctl00$contents$SummaryContainer$PricingTab$ucPricing$DiscButton1Y','')" style="display:inline-block;height:25px;width:30px;">1Y</a>
+    <a id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_DiscButton3Y" title="Show 3 year chart" href="javascript:__doPostBack('ctl00$contents$SummaryContainer$PricingTab$ucPricing$DiscButton3Y','')" style="display:inline-block;height:25px;width:30px;">3Y</a>
+    <a id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_DiscButton5Y" title="Show 5 year chart" href="javascript:__doPostBack('ctl00$contents$SummaryContainer$PricingTab$ucPricing$DiscButton5Y','')" style="display:inline-block;height:25px;width:30px;">5Y</a>
+    <a id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_DiscButtonAll" title="Show chart since inception" href="javascript:__doPostBack('ctl00$contents$SummaryContainer$PricingTab$ucPricing$DiscButtonAll','')" style="display:inline-block;height:25px;width:100px;">Since Inception</a>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+    <td align="center" bgcolor="#d9eff0" colspan="2"><h5>Pricing History</h5></td>
+</tr>
+<tr>
+    <td align="center" colspan="2">
+        <span class="tabs"><input id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_Price1M" type="radio" name="ctl00$contents$SummaryContainer$PricingTab$ucPricing$PricePeriod" value="Price1M" /><label for="ctl00_contents_SummaryContainer_PricingTab_ucPricing_Price1M">Display 1 month daily history from:</label></span>
+        <span class="tabs"><input id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_Price5Y" type="radio" name="ctl00$contents$SummaryContainer$PricingTab$ucPricing$PricePeriod" value="Price5Y" /><label for="ctl00_contents_SummaryContainer_PricingTab_ucPricing_Price5Y">Display 5 year monthly history from:</label></span>
+    </td>
+</tr>
+<tr>
+    <td align="center" colspan="2">
+    <table>
+    <tr>
+        <td class="tabs" width="110px" align="right">
+        <div id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_wrapper" class="pickerWrapper_Default2006" style="display:inline-block;height:20px;width:90px;">
+				<!-- 2.2.2 --><input name="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker" type="hidden" id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker" value="2008-05-01" /><table cellpadding="0" cellspacing="0" style="border-width:0;border-collapse:collapse;width:90px;">
+					<tr>
+						<td style="width:100%;"><div id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_dateInput_wrapper" class="radInput_Default" style="height:18px;WIDTH:100%;">
+	<!-- 2.1.2 --><span id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_dateInputStyleSheetHolder" style="display:none;"></span><table cellpadding="0" cellspacing="0" style="border-width:0;border-collapse:collapse;table-layout:fixed;width:100%;">
+		<tr>
+			<td class="inputCell" style="width:100%;"><input id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_dateInput_text" class="radEnabledCss_Default tabs" style="width:100%;" /><input style="visibility: hidden;position:absolute;right:0;width:0;height:0;overflow:hidden;border:0;padding:0;margin:0;" id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_dateInput" name="ctl00$contents$SummaryContainer$PricingTab$ucPricing$PriceDatePicker$dateInput" type="text" value="2008-05-01-00-00-00" /></td>
+		</tr>
+	</table><script type="text/javascript">window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_dateInput"] = new RadDateInput("ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_dateInput", {"IncrementSettings":{"Step":1,"InterceptArrowKeys":true,"InterceptMouseWheel":true},"DateTimeFormatInfo":{"TimeSeparator":":","AMDesignator":"AM","PMDesignator":"PM","DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"FirstDayOfWeek":"Sunday","DateSeparator":"/","DateSlots":{"Month":0,"Year":2,"Day":1},"TimeInputOnly":false,"ShortYearCenturyEnd":2029},"DisplayDateFormat":"M/d/yyyy","DateFormat":"M/d/yyyy","MinDate":[1920,2,1,0,0,0],"MaxDate":[2099,12,16,0,0,0],"AutoPostBack":false,"EmptyMessage":"","SelectionOnFocus":0,"ClientEvents":{"OnError":"","OnButtonClick":"","OnLoad":"","OnMouseOut":"","OnMouseOver":"","OnFocus":"","OnBlur":"","OnDisable":"","OnEnable":"","OnValueChanged":"","OnKeyPress":"GoClicked","OnEnumerationChanged":"","OnMoveUp":"","OnMoveDown":"","OnShowHint":""},"ShowButton":false,"ButtonsPosition":1,"Enabled":true,"PostBackEventReferenceScript":"__doPostBack('ctl00$contents$SummaryContainer$PricingTab$ucPricing$PriceDatePicker','')"}, {HoveredStyle: ["width:100%;", "radHoverCss_Default tabs"],InvalidStyle: ["width:100%;", "radInvalidCss_Default tabs"],DisabledStyle: ["width:100%;", "radDisabledCss_Default tabs"],FocusedStyle: ["width:100%;", "radFocusedCss_Default tabs"],EmptyMessageStyle: ["width:100%;", "radEmptyMessageCss_Default tabs"],EnabledStyle: ["width:100%;", "radEnabledCss_Default tabs"]});RadDatePicker.InitializeDateInput(window['ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker']);</script>
+</div></td><td><a title="Open the calendar popup." href="#" id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_popupButton" class="radPopupImage_Default2006"><img id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_CalendarPopupButton" src="../RadControls/Calendar/Skins/Default2006/Img/datePickerPopup.gif" alt="Open the calendar popup." style="border-width:0px;" /></a><div id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_wrapper" style="display: none" ><!-- 2.2.2 --><span id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendarStyleSheetHolder" style="display:none;"></span><table id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar" cellspacing="0" cellpadding="0" summary="Telerik RadCalendar instance" class="calendarWrapper_Default2006" border="0" style="border-color:Black;border-width:1px;border-style:solid;border-collapse:collapse;">
+							<tbody><tr>
+								<td colspan="3" style="vertical-align:top;white-space:nowrap;"><table class="titlebar_Default2006" cellspacing="0" cellpadding="3" summary="Telerik RadCalendar title and navigation controls" border="0" style="background-color:#009196;border-collapse:collapse;">
+									<tbody><tr>
+										<td><a id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_FNP" onclick="return false;" href="#"><img src="/RadControls/Calendar/Skins/Default2006/Img/fastNavLeft.gif" alt="&lt;&lt;" style="border:0px;" /></a></td><td><a id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_NP" onclick="return false;" href="#"><img src="/RadControls/Calendar/Skins/Default2006/Img/arrowLeft.gif" alt="&lt;" style="border:0px;" /></a></td><td id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Title" style="width:100%;text-align:center;white-space:nowrap;">May 2013</td><td><a id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_NN" onclick="return false;" href="#"><img src="/RadControls/Calendar/Skins/Default2006/Img/arrowRight.gif" alt=">" style="border:0px;" /></a></td><td><a id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_FNN" onclick="return false;" href="#"><img src="/RadControls/Calendar/Skins/Default2006/Img/fastNavRight.gif" alt=">>" style="border:0px;" /></a></td>
+									</tr></tbody>
+								</table></td>
+							</tr><tr>
+								<td colspan="3" style="height:100%;"><table id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top" class="TableLayout_Default2006" cellspacing="3" cellpadding="3" summary="May 2013" border="0" style="background-color:White;">
+	<tbody><tr>
+		<th class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;"></th><th id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top_cs_1" title="Sunday" class="DaysOfWeek_Default2006" abbr="day Sunday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">S</th><th id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top_cs_2" title="Monday" class="DaysOfWeek_Default2006" abbr="day Monday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">M</th><th id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top_cs_3" title="Tuesday" class="DaysOfWeek_Default2006" abbr="day Tuesday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">T</th><th id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top_cs_4" title="Wednesday" class="DaysOfWeek_Default2006" abbr="day Wednesday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">W</th><th id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top_cs_5" title="Thursday" class="DaysOfWeek_Default2006" abbr="day Thursday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">T</th><th id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top_cs_6" title="Friday" class="DaysOfWeek_Default2006" abbr="day Friday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">F</th><th id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top_cs_7" title="Saturday" class="DaysOfWeek_Default2006" abbr="day Saturday" scope="col" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">S</th>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top_rs_1" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">18</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="radCalDefault_Default2006" title="Wednesday, May 01, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >1</a></td><td class="radCalDefault_Default2006" title="Thursday, May 02, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >2</a></td><td class="radCalDefault_Default2006" title="Friday, May 03, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >3</a></td><td class="radCalWeekendDefault_Default2006" title="Saturday, May 04, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >4</a></td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top_rs_2" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">19</td><td class="radCalWeekendDefault_Default2006" title="Sunday, May 05, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >5</a></td><td class="radCalDefault_Default2006" title="Monday, May 06, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >6</a></td><td class="radCalDefault_Default2006" title="Tuesday, May 07, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >7</a></td><td class="radCalDefault_Default2006" title="Wednesday, May 08, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >8</a></td><td class="radCalDefault_Default2006" title="Thursday, May 09, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >9</a></td><td class="radCalDefault_Default2006" title="Friday, May 10, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >10</a></td><td class="radCalWeekendDefault_Default2006" title="Saturday, May 11, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >11</a></td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top_rs_3" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">20</td><td class="radCalWeekendDefault_Default2006" title="Sunday, May 12, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >12</a></td><td class="radCalDefault_Default2006" title="Monday, May 13, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >13</a></td><td class="radCalDefault_Default2006" title="Tuesday, May 14, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >14</a></td><td class="radCalDefault_Default2006" title="Wednesday, May 15, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >15</a></td><td class="radCalDefault_Default2006" title="Thursday, May 16, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >16</a></td><td class="radCalDefault_Default2006" title="Friday, May 17, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >17</a></td><td class="radCalWeekendDefault_Default2006" title="Saturday, May 18, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >18</a></td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top_rs_4" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">21</td><td class="radCalWeekendDefault_Default2006" title="Sunday, May 19, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >19</a></td><td class="radCalDefault_Default2006" title="Monday, May 20, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >20</a></td><td class="radCalDefault_Default2006" title="Tuesday, May 21, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >21</a></td><td class="radCalDefault_Default2006" title="Wednesday, May 22, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >22</a></td><td class="radCalDefault_Default2006" title="Thursday, May 23, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >23</a></td><td class="radCalDefault_Default2006" title="Friday, May 24, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >24</a></td><td class="radCalWeekendDefault_Default2006" title="Saturday, May 25, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >25</a></td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top_rs_5" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">22</td><td class="radCalWeekendDefault_Default2006" title="Sunday, May 26, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >26</a></td><td class="radCalDefault_Default2006" title="Monday, May 27, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >27</a></td><td class="radCalDefault_Default2006" title="Tuesday, May 28, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >28</a></td><td class="radCalDefault_Default2006" title="Wednesday, May 29, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >29</a></td><td class="radCalDefault_Default2006" title="Thursday, May 30, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >30</a></td><td class="radCalDefault_Default2006" title="Friday, May 31, 2013" style="border-color:Black;"><a href="#" onclick="return false;" >31</a></td><td class="otherMonth_Default2006">&#160;</td>
+	</tr><tr>
+		<td id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top_rs_6" class="DaysOfWeek_Default2006" style="background-color:#D9CFC1;border-width:1px;border-style:solid;">23</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td><td class="otherMonth_Default2006">&#160;</td>
+	</tr></tbody>
+</table></td>
+							</tr></tbody>
+						</table><input type="hidden" name="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_SD" id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_SD" value="[]" /><input type="hidden" name="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_AD" id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_AD" value="[[1920,2,1],[2099,12,16],[2013,5,17]]" /><script type="text/javascript">
+window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_CDFI"] = [["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],["January","February","March","April","May","June","July","August","September","October","November","December",],["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",],"dddd, MMMM dd, yyyy h:mm:ss tt","dddd, MMMM dd, yyyy","h:mm:ss tt","MMMM dd","ddd, dd MMM yyyy HH\':\'mm\':\'ss \'GMT\'","M/d/yyyy","h:mm tt","yyyy\'-\'MM\'-\'dd\'T\'HH\':\'mm\':\'ss","yyyy\'-\'MM\'-\'dd HH\':\'mm\':\'ss\'Z\'","MMMM, yyyy","AM","PM","/",":",0];
+
+window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_CSD"] = [];
+
+window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_CE"] = [,,,,,,,,,,];
+
+window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Views"] = {ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Top : [[2013,5,1], 1]};
+
+window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Data"] = ["__doPostBack(\'ctl00$contents$SummaryContainer$PricingTab$ucPricing$PriceDatePicker$calendar\',\'@@\')","ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar",1,1,1,1,0,0,0,0,0,0,0,7,6,1,1,3,7,"Default2006",,0,0,0,"%d",2,2,3,3,1,1,2,"MMMM yyyy","dddd, MMMM dd, yyyy"," - ",0,1,0,1,0,1];
+
+window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_MYFN"] = ["Today","OK","Cancel","Date is out of range.","False"];
+
+window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_STL"] = {DayStyle: ["border-color:Black;", "radCalDefault_Default2006"],CalendarTableStyle: ["background-color:White;", "TableLayout_Default2006"],OtherMonthDayStyle: ["", "otherMonth_Default2006"],TitleStyle: ["background-color:#009196;", "titlebar_Default2006"],SelectedDayStyle: ["background-color:Orange;", "radCalSelect_Default2006"],SelectorStyle: ["background-color:#D9CFC1;border-width:1px;border-style:solid;", "DaysOfWeek_Default2006"],DisabledDayStyle: ["", "radCalDisable_Default2006"],OutOfRangeDayStyle: ["border-color:MintCream;", "outOfRange_Default2006"],WeekendDayStyle: ["border-color:Black;", "radCalWeekendDefault_Default2006"],DayOverStyle: ["color:#C0FFFF;background-color:SlateGray;font-weight:bold;", "radCalHover_Default2006"],FastNavigationStyle: ["", "MonthYearFastNav_Default2006"]};
+
+window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_RCC"] = {};
+
+window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_VRP"] = {};
+
+window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar"] =  new RadCalendar(window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_CDFI"],window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_CSD"],window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_CE"],window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Data"],window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_Views"],window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_MYFN"],window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_STL"],window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_RCC"],window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_VRP"]);
+
+
+</script>
+</div></td>
+					</tr>
+				</table><script type="text/javascript">/*<![CDATA[
+*/window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker"] = new RadDatePicker("ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker");window["ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker"].Initialize({"DateInputID":"ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_dateInput","CalendarID":"ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar","PopupContainerID":"ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_calendar_wrapper","PopupControlID":"ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceDatePicker_popupButton","PopupButtonSettings":{"ResolvedImageUrl":"/RadControls/Calendar/Skins/Default2006/Img/datePickerPopup.gif","ResolvedHoverImageUrl":"/RadControls/Calendar/Skins/Default2006/Img/datePickerPopupHover.gif"},"PopupButtonSettings":{"ResolvedImageUrl":"/RadControls/Calendar/Skins/Default2006/Img/datePickerPopup.gif","ResolvedHoverImageUrl":"/RadControls/Calendar/Skins/Default2006/Img/datePickerPopupHover.gif"},"MinDate":[1920,2,1,0,0,0],"MaxDate":[2099,12,16,0,0,0],"FocusedDate":[2006,2,1,0,0,0],"ClientEvents":{"OnPopupUpdating":"","OnDateSelected":"","TypingTimeOut":2000,"OnPopupOpening":"","OnPopupClosing":""}});/*]]>*/</script>
+			</div>
+        </td>
+        <td class="tabs" align="left">
+            <a id="ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceHistoryGo" class="buttongreensm" href="javascript:__doPostBack('ctl00$contents$SummaryContainer$PricingTab$ucPricing$PriceHistoryGo','')"><span>GO</span></a>
+        </td>
+    </tr>
+    </table>
+    
+    <div>
+
+			</div>
+    
+    </td>
+</tr>
+</table>
+
+						
+		</div><div id="ctl00_contents_SummaryContainer_PerformanceTab" style="display:none;visibility:hidden;">
+			
+							
+
+<table cellpadding="0" border="0" width="100%">
+    <tr>
+        <td class="tabs">
+            Display Performance for: 
+            <span id="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_PerfBoxList" class="tabs"><input id="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_PerfBoxList_0" type="checkbox" name="ctl00$contents$SummaryContainer$PerformanceTab$ucPerformance$PerfBoxList$0" onclick="javascript:setTimeout('__doPostBack(\'ctl00$contents$SummaryContainer$PerformanceTab$ucPerformance$PerfBoxList$0\',\'\')', 0)" /><label for="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_PerfBoxList_0">Price</label><input id="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_PerfBoxList_1" type="checkbox" name="ctl00$contents$SummaryContainer$PerformanceTab$ucPerformance$PerfBoxList$1" onclick="javascript:setTimeout('__doPostBack(\'ctl00$contents$SummaryContainer$PerformanceTab$ucPerformance$PerfBoxList$1\',\'\')', 0)" /><label for="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_PerfBoxList_1">NAV</label><input id="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_PerfBoxList_2" type="checkbox" name="ctl00$contents$SummaryContainer$PerformanceTab$ucPerformance$PerfBoxList$2" onclick="javascript:setTimeout('__doPostBack(\'ctl00$contents$SummaryContainer$PerformanceTab$ucPerformance$PerfBoxList$2\',\'\')', 0)" /><label for="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_PerfBoxList_2">Group-Price</label><input id="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_PerfBoxList_3" type="checkbox" name="ctl00$contents$SummaryContainer$PerformanceTab$ucPerformance$PerfBoxList$3" onclick="javascript:setTimeout('__doPostBack(\'ctl00$contents$SummaryContainer$PerformanceTab$ucPerformance$PerfBoxList$3\',\'\')', 0)" /><label for="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_PerfBoxList_3">Group-NAV</label></span>
+        </td>
+    </tr>
+    <tr bgcolor="#d9eff0"><td><h5>Calendar Year Total Returns</h5></td></tr>
+    <tr>
+        <td class="tabs">
+        
+            <div style="float:left;">As of <span id="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_lblAsOf1"></span></div>
+            <div style="float:right;"><a id="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_lbCollapse" href="javascript:__doPostBack('ctl00$contents$SummaryContainer$PerformanceTab$ucPerformance$lbCollapse','')">Past 20 Years</a></div>
+            <div style="clear: both;"></div>
+            
+            <input type="hidden" name="ctl00$contents$SummaryContainer$PerformanceTab$ucPerformance$cpe_ClientState" id="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_cpe_ClientState" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div id="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_pnlPast20">
+				   
+                <div>
+
+				</div>
+            
+			</div>
+        </td>
+    </tr>
+    
+    <tr>
+        <td> 
+        <img alt="View calendar year total returns" src="../Charter/Charter.aspx?cusip=&type=PerformanceCharter&parm0=Calendar&parm1=Price,NAV&R=26"/>
+        </td>
+    </tr>
+    <tr>
+        <td class="tabs">
+            
+			<a id="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_DmatHyperLink1" href="/Documents/Default.aspx?fileId=45948" target="_blank">View Group Definitions</a>
+        </td>
+    </tr>    
+    <tr bgcolor="#d9eff0"><td><h5>Annualized Total Returns</h5></td></tr>
+    <tr>
+        <td class="tabs">
+            Returns for periods less than one year are cumulative rather than annualized
+        </td>
+    </tr>
+    <tr>
+        <td class="tabs">
+            As of <span id="ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_lblAsOf2"></span>
+        </td>
+    </tr>
+    <tr>
+        <td>      
+        <img alt="View annualized total returns" src="../Charter/Charter.aspx?cusip=&type=PerformanceCharter&parm0=Annual&parm1=Price,NAV&R=216"/>
+        </td>
+    </tr>  
+</table>      
+
+
+
+
+
+						
+		</div><div id="ctl00_contents_SummaryContainer_CharateristicsTab" style="display:none;visibility:hidden;">
+			
+							<table id="ctl00_contents_SummaryContainer_CharateristicsTab_ucPortChar_PortfolioCharacteristics" width="100%" cellpadding="3">
+				<tr>
+					<td width="45%" valign="top">
+    <table width="100%">
+    <tr><td align="center" bgcolor="#d9eff0"><h5 title="See Glossary for any unknown portfolio characteristics">Portfolio Characteristics</h5></td></tr>
+    <tr><td>
+    <div>
+
+					</div>
+    </td></tr>
+    <tr><td align="center">&nbsp;</td></tr>
+    <tr><td align="center" bgcolor="#d9eff0"><h5>Top Holdings</h5></td></tr>
+    <tr><td align="left"><i><span id="ctl00_contents_SummaryContainer_CharateristicsTab_ucPortChar_HoldingsAsOfLabel" class="tabs"></span></i></td></tr>
+    <tr><td>
+    <div>
+
+					</div>
+    </td></tr>
+    <tr><td align="center">&nbsp;</td></tr>
+    </table>
+    
+    
+</td>
+					<td width="55%" valign="top">
+    <table width="100%">
+    <tr><td align="center" bgcolor="#d9eff0"><h5 title="See Glossary for any unknown asset types">Asset Allocation</h5></td></tr>
+    <tr><td align="left"><i><span id="ctl00_contents_SummaryContainer_CharateristicsTab_ucPortChar_AssetAsOfLabel" class="tabs"></span></i></td></tr>
+    <tr><td>
+        <img alt="Asset Allocation. See Glossary for any unknown asset types." src="../Charter/Charter.aspx?cusip=&type=AssetAllocCharter&R=17"/>
+    </td></tr>
+    <tr><td align="center">&nbsp;</td></tr>
+    </table>
+    
+    
+    
+    
+</td>
+				</tr>
+			</table>
+			
+<br />
+
+
+
+						
+		</div>
+	</div>
+</div>
+				<div class="black11">
+					<p>
+						<span>Fund shares are not guaranteed or endorsed by any bank or other insured depository institution, and are not federally insured by the Federal Deposit Insurance Corporation. Shares of closed-end funds are subject to investment risks, including the possible loss of principal invested. Past performance is no guarantee of future results.</span></p>
+				</div>
+				<br>
+				<div class="black11" id="Risks">
+					<b>The risks outlined below do not include all the risks pertaining to an investment in this fund. For more detailed information, please contact the Fund Sponsor.</b>
+					<br>
+					<br>
+					<span class="black11">
+						<span id="ctl00_contents_PriceRiskLabel" class="black11"></span>
+						<span id="ctl00_contents_DistrRiskLabel" class="black11"></span>
+						<span id="ctl00_contents_OtherRiskLabel" class="black11"></span>
+					</span>
+					<br>
+				</div>
+				<div class="black11">
+					<b>NOTES</b></div>
+				<br>
+				<div class="black11">
+					<span id="ctl00_contents_MngDistFootnote"><p>*Certain funds have adopted a 'managed distribution policy.' Regular distributions throughout the year may include realized and unrealized capital gains, along with net investment income, and may from time to time also include a return of capital. It is important to understand the components of a managed distribution and the fund's NAV performance relative to its distribution rate.  View more information about <a href='../Education/GlossaryCEF.aspx#managed-distribution-policy' class='select'>Managed Distributions</a>.</p><br></span>
+					<p>
+						1. Annualized total return is determined by subtracting the initial investments from the redeemable value of the investment at the end of the investment period, dividing the remainder by the initial investment and expressing the result as a percentage. For multiple years, 1 would be added to the results, this number could then be raised to the power of 1/years annualized - 1 to find the result of a multiple year annualized return. The calculation assumes that all income and capital gains distributions by the Fund have been reinvested at net asset value (share price) on the ex dates during the period.
+					</p>
+					<br>
+					<span id="ctl00_contents_TaxYieldFootnote"><p>†Taxable equivalent yield represents the yield you would need to earn on a taxable investment in order to equal the federal tax-free yield on a municipal investment. The yield shown is based on the current market yield and a federal tax rate of 35%. At the present time, no state tax rate is assumed for this calculation.</p></span>
+				</div>
+			</td>
+			<td class="subpage-right">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3" class="subpage-bottom">
+			</td>
+		</tr>
+	</table>
+
+		</div>
+		
+
+			<table cellpadding="0">
+				<tr>
+					<td width="578" class="footer">
+						<a href="../Education/GlossaryCEF.aspx" class="footer">Glossary</a> | <a href="../Footer/Sitemap.aspx" class="footer">Sitemap</a> | <a href="../Footer/Legal.aspx" class="footer">Legal</a> | <a href="../Footer/Privacy.aspx" class="footer">Privacy Policy</a> | <a href="../Footer/Feedback.aspx" class="footer">Feedback</a> |
+						<a id="ctl00_footer_DmatHyperLink1" class="footer" href="/Documents/Default.aspx?fileId=45947" target="_blank">Help</a><br />
+						The content of this site, including but not limited to the text and images herein and their<br>
+						arrangement, are <a href="../Footer/Legal.aspx" class="footer">Copyright &copy;2001-2010</a> by Nuveen Investments. All rights reserved.<br />
+						View <a href="javascript:openWindow('../Footer/Disclaimer.aspx','CEFDisclaimer')" class="footer">Disclaimer Information</a>.
+					</td>
+					<td width="208">
+					</td>
+					<td width="90" style="vertical-align: top;">
+						<a href="http://www.morningstar.com" target="ExternalSite" onclick='return confirmLeaveSite();'>
+							<img src="../images/logo_morningstar.gif" width="114" height="47" alt="Data Provided by Morningstar" />
+						</a>
+					</td>
+				</tr>
+			</table>
+		
+		
+		
+	</div>
+	
+
+<script type="text/javascript">
+//<![CDATA[
+AddClickFunction('ctl00_contents_SummaryContainer_PricingTab_ucPricing_PriceHistoryGo');Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.AutoCompleteBehavior, {"completionInterval":800,"completionListCssClass":"autocomplete_completionListElement","completionListItemCssClass":"autocomplete_listItem","completionSetCount":12,"delimiterCharacters":"","highlightedItemCssClass":"autocomplete_highlightedListItem","id":"ctl00_AutoCompleteExtender1","minimumPrefixLength":2,"serviceMethod":"GetCompletionList","servicePath":"/Details/Summary.aspx"}, {"itemSelected":OnSearchClientItemSelected}, null, $get("ctl00_txtSearch"));
+});
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":100,"dynamicLayout":true}, null, null, $get("ctl00_UpdateProgress1"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.DropDownBehavior, {"dropArrowBackgroundColor":"Transparent","dropArrowImageUrl":"../images/transparent.gif","dropArrowWidth":"0px","dropDownControl":$get("ctl00_contents_ucAddToPortfolio_panelItems"),"dynamicServicePath":"/Details/Summary.aspx","id":"ctl00_contents_ucAddToPortfolio_imgAddToPortfolio_DropDownExtender"}, null, null, $get("ctl00_contents_ucAddToPortfolio_hlAddToPortfolio"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_ctl00_contents_SummaryContainer_BasicsTab"),"scrollBars":3}, null, {"owner":"ctl00_contents_SummaryContainer"}, $get("ctl00_contents_SummaryContainer_BasicsTab"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_cpe_ClientState","CollapseControlID":"ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_lbCollapse","Collapsed":true,"CollapsedSize":0,"CollapsedText":"Show Since Inception","ExpandControlID":"ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_lbCollapse","ExpandedText":"Hide Since Inception","SuppressPostBack":true,"TextLabelID":"ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_lbCollapse","id":"ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_cpe"}, null, null, $get("ctl00_contents_SummaryContainer_DistributionsTab_ucDistributions_pnlInception"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_ctl00_contents_SummaryContainer_DistributionsTab")}, null, {"owner":"ctl00_contents_SummaryContainer"}, $get("ctl00_contents_SummaryContainer_DistributionsTab"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_ctl00_contents_SummaryContainer_PricingTab")}, null, {"owner":"ctl00_contents_SummaryContainer"}, $get("ctl00_contents_SummaryContainer_PricingTab"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.CollapsiblePanelBehavior, {"ClientStateFieldID":"ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_cpe_ClientState","CollapseControlID":"ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_lbCollapse","Collapsed":true,"CollapsedSize":0,"CollapsedText":"Show Past 20 Years","ExpandControlID":"ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_lbCollapse","ExpandedText":"Hide Past 20 Years","SuppressPostBack":true,"TextLabelID":"ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_lbCollapse","id":"ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_cpe"}, null, null, $get("ctl00_contents_SummaryContainer_PerformanceTab_ucPerformance_pnlPast20"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_ctl00_contents_SummaryContainer_PerformanceTab"),"scrollBars":3}, null, {"owner":"ctl00_contents_SummaryContainer"}, $get("ctl00_contents_SummaryContainer_PerformanceTab"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabPanel, {"headerTab":$get("__tab_ctl00_contents_SummaryContainer_CharateristicsTab")}, null, {"owner":"ctl00_contents_SummaryContainer"}, $get("ctl00_contents_SummaryContainer_CharateristicsTab"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.TabContainer, {"activeTabIndex":0,"clientStateField":$get("ctl00_contents_SummaryContainer_ClientState"),"scrollBars":4}, {"activeTabChanged":OnChanged}, null, $get("ctl00_contents_SummaryContainer"));
+});
+//]]>
+</script>
+</form>
+	
+	
+</body>
+</html>

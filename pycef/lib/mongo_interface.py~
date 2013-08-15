@@ -1,0 +1,84 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon May 20 16:28:05 2013
+
+@author: laegrim
+"""
+
+from pymongo import MongoClient
+import logging
+import logging.config
+
+logging.config.fileConfig('logging.conf')
+
+class Mongo(object):
+    '''Wrap Mongo interaction in this app for ease of use               
+    '''
+
+    def __init__(self):
+        pass            
+            
+    def __enter__(self):
+        '''Setup inner class for use within with statement    
+        '''
+    
+        class MongoWrapper(object):
+            '''Inner class wrapping queries and updates
+            '''
+        
+            def __init__(self):
+                self.db = None
+                self.col = None
+                self.info = None
+                self.query_params = None
+                self.logger = logging.getLogger('scrape.mongo_interface.mongoWrapper')
+                    
+            def push_to_mongo(self, info, db, col, query_params=None):
+                '''wrap mongo update function
+                '''
+                
+                self.db = db
+                self.col = col
+                self.info = info
+                self.query_params = query_params
+             
+                try:
+                    with MongoClient() as self.client:
+                        self.db = self.client[self.db]
+                        self.col = self.db[self.col]
+                        self.update_status = self.col.update(self.query_params,
+                                                             self.info,
+                                                             True
+                                                             )
+                    return self.update_status
+                        
+                except Exception, err:
+                    self.logger.exception('push_to_mongo failed')
+            
+            def pull_from_mongo(self, query, db, col):
+                '''wrap mongo find function   
+                '''                 
+                
+                self.db = db
+                self.col = col
+                self.query = query
+                
+                try:
+                    with MongoClient() as self.client:
+                        self.db = self.client[self.db]
+                        self.col = self.db[self.col]
+                        self.query = self.col.find_one(self.query)
+                    return self.query
+                        
+                except Exception, err:
+                    self.logger.exception('pull_from_mongo failed')
+                        
+        self.wrapper = MongoWrapper()
+        return self.wrapper
+         
+    def __exit__(self, type_, value_, traceback_):
+        '''clean things up for return from with         
+        '''
+        
+        #self.wrapper = None
+        
