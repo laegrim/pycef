@@ -15,7 +15,6 @@ import datetime
 from pycef.lib.conf.constants import LOG_CONF_LOC
 from pycef.lib.mongo.mongo_interface import Mongo
 
-
 logging.config.fileConfig(LOG_CONF_LOC)
 START_LOGGER = logging.getLogger('scrape.scrape_cefs')
 

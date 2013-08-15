@@ -6,11 +6,13 @@ Created on Mon May 20 16:28:05 2013
 """
 
 from pymongo import MongoClient
-import os
 import pymongo
 from pycef.lib.conf.constants import LOG_CONF_LOC
 import logging
 import logging.config
+
+print LOG_CONF_LOC
+
 
 logging.config.fileConfig(LOG_CONF_LOC)
 
