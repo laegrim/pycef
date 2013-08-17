@@ -6,7 +6,7 @@ Created on Mon May 20 16:28:05 2013
 """
 
 import logging
-print 'logigng imported'
+print 'logging imported'
 import logging.config
 print 'logging.config imported'
 import pycef.lib.scrape.scrape_cefs as scrape_cefs
