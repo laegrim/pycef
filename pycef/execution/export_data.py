@@ -13,7 +13,7 @@ from pycef.lib.mongo.mongo_interface import Mongo
 from pycef.lib.conf.constants import LOG_CONF_LOC
 
 
-logging.config.fileConfig(LOG_CONF_LOC)
+logging.config.dictConfig(LOG_CONF_LOC)
 
 class ExportCSV(object):
     ''' Class ExportCSV handles the grabbing and bundling of db 

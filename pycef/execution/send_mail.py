@@ -17,7 +17,7 @@ from configobj import ConfigObj
 from pycef.lib.conf.constants import LOG_CONF_LOC, SCRAPE_CONF_LOC, CONF_DIR
 import pycef.execution.export_data as Export
 
-logging.config.fileConfig(LOG_CONF_LOC)
+logging.config.dictConfig(LOG_CONF_LOC)
 
 class SendMail(object):
     '''class SendMail handles actually sending the cef information

@@ -12,7 +12,7 @@ import logging
 import logging.config
 
 
-logging.config.fileConfig(LOG_DICT)
+logging.config.dictConfig(LOG_DICT)
 
 class Mongo(object):
     ''' Wrap Mongo interaction in this app for ease of use               
