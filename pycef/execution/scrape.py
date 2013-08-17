@@ -17,6 +17,8 @@ from pycef.lib.conf.constants import LOG_CONF_LOC
 print 'pycef.lib.conf.constants imported'
 
 logging.config.fileConfig(LOG_CONF_LOC)
+
+print 'finished with imports'
 print LOG_CONF_LOC
 
 class Scrape(object):
