@@ -5,6 +5,8 @@ Created on Thu Aug 15 13:51:06 2013
 @author: laegrim
 """
 
+import os
+
 CONF_DIR = os.path.dirname(os.path.abspath(__file__))
 SCRAPE_CONF_LOC = os.path.dirname(os.path.abspath(__file__)) + '/scrape.conf'
 LOG_DICT = {

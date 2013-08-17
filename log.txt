@@ -813,3 +813,36 @@ IndexError: list index out of range
 2013-08-15 17:04:06 - scrape.scrape_cefs.CEFInfo - INFO - get_info: Unable to get info from ['ACAS', 'BKCC', 'CSWC', 'EQS', 'FDUS', 'GBDC', 'TINY', 'KIPO', 'NMFC', 'NXZ', 'PNNT', 'SCM', 'TICC', 'CBA', 'FSFR']
 2013-08-15 17:04:06 - scrape.scrape_cefs.CEFInfo - INFO - get_info: Unable to get info from ['AIF', 'BGH', 'BUI', 'BGB', 'BOI', 'MIE', 'DSL', 'ETUB', 'FSC', 'GLUXR', 'GLAD', 'HCAP', 'HRZN', 'MAIN', 'MCGC', 'MVC', 'SLRC', 'TCAP', 'HIF', 'FPF', 'EFF', 'KIO']
 2013-08-15 17:04:06 - scrape - WARNING - self.cef_get.get_info() failed
+2013-08-17 16:44:45 - scrape.scrape_cefs.CEFInfo - DEBUG - starting pool
+2013-08-17 16:44:45 - scrape.scrape_cefs.CEFInfo - DEBUG - starting pool
+2013-08-17 16:44:45 - scrape.scrape_cefs.CEFInfo - DEBUG - starting pool
+2013-08-17 16:45:28 - scrape.scrape_info - ERROR - Rank 2: Ticker ACAS
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:45:28 - scrape.scrape_info - ERROR - Rank 2: Ticker ACAS
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:45:42 - scrape.scrape_info - ERROR - Rank 1: Ticker AINV
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:45:42 - scrape.scrape_info - ERROR - Rank 1: Ticker AINV
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:45:50 - scrape.scrape_info - ERROR - Rank 0: Ticker ARCC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:45:50 - scrape.scrape_info - ERROR - Rank 0: Ticker ARCC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
