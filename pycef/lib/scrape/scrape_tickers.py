@@ -10,10 +10,10 @@ import re
 from BeautifulSoup import BeautifulSoup
 import logging
 import logging.config
-from pycef.lib.conf.constants import LOG_CONF_LOC
+from pycef.lib.conf.constants import LOG_DICT
 from pycef.lib.mongo.mongo_interface import Mongo
 
-logging.config.fileConfig(LOG_CONF_LOC)
+logging.config.dictConfig(LOG_DICT)
 
 class TickerGet(object):
     '''Bundles methods to grab cef tickers from the daily list at the wsj
