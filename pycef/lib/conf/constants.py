@@ -12,5 +12,5 @@ LOG_CONF_LOC = os.path.dirname(os.path.abspath(__file__)) + '/logging.conf'
 SCRAPE_CONF_LOC = os.path.dirname(os.path.abspath(__file__)) + '/scrape.conf'
 
 print CONF_DIR
-print LOG_CONF_DIR
+print LOG_CONF_LOC
 print SCRAPE_CONF_LOC
