@@ -846,3 +846,413 @@ Traceback (most recent call last):
   File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
     date = date[2].split('/')
 IndexError: list index out of range
+2013-08-17 16:46:51 - scrape.scrape_info - ERROR - Rank 2: Ticker BKCC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:46:51 - scrape.scrape_info - ERROR - Rank 2: Ticker BKCC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:48:42 - scrape.scrape_info - ERROR - Rank 2: Ticker CSWC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:48:42 - scrape.scrape_info - ERROR - Rank 2: Ticker CSWC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:49:04 - scrape.scrape_info - ERROR - Rank 1: Ticker CORR
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:49:04 - scrape.scrape_info - ERROR - Rank 1: Ticker CORR
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:51:13 - scrape.scrape_info - ERROR - Rank 3: Ticker ETUB
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:51:13 - scrape.scrape_info - ERROR - Rank 3: Ticker ETUB
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:51:23 - scrape.scrape_info - ERROR - Rank 2: Ticker EQS
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:51:23 - scrape.scrape_info - ERROR - Rank 2: Ticker EQS
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:51:26 - scrape.scrape_info - ERROR - Rank 1: Ticker SVVC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:51:26 - scrape.scrape_info - ERROR - Rank 1: Ticker SVVC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:51:29 - scrape.scrape_info - ERROR - Rank 3: Ticker FSC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:51:29 - scrape.scrape_info - ERROR - Rank 3: Ticker FSC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:51:38 - scrape.scrape_info - ERROR - Rank 2: Ticker FDUS
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:51:38 - scrape.scrape_info - ERROR - Rank 2: Ticker FDUS
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:51:59 - scrape.scrape_info - ERROR - Rank 1: Ticker FULL
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:51:59 - scrape.scrape_info - ERROR - Rank 1: Ticker FULL
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:18 - scrape.scrape_info - ERROR - Rank 3: Ticker GLUXR
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:18 - scrape.scrape_info - ERROR - Rank 3: Ticker GLUXR
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:18 - scrape.scrape_info - ERROR - Rank 0: Ticker GARS
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:18 - scrape.scrape_info - ERROR - Rank 0: Ticker GARS
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:27 - scrape.scrape_info - ERROR - Rank 0: Ticker GAIN
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:27 - scrape.scrape_info - ERROR - Rank 0: Ticker GAIN
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:31 - scrape.scrape_info - ERROR - Rank 3: Ticker GLAD
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:31 - scrape.scrape_info - ERROR - Rank 3: Ticker GLAD
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:34 - scrape.scrape_info - ERROR - Rank 0: Ticker GSVC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:34 - scrape.scrape_info - ERROR - Rank 0: Ticker GSVC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:44 - scrape.scrape_info - ERROR - Rank 2: Ticker GBDC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:44 - scrape.scrape_info - ERROR - Rank 2: Ticker GBDC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:52 - scrape.scrape_info - ERROR - Rank 3: Ticker HCAP
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:52 - scrape.scrape_info - ERROR - Rank 3: Ticker HCAP
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:52 - scrape.scrape_info - ERROR - Rank 1: Ticker HTGC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:52 - scrape.scrape_info - ERROR - Rank 1: Ticker HTGC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:59 - scrape.scrape_info - ERROR - Rank 2: Ticker TINY
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:52:59 - scrape.scrape_info - ERROR - Rank 2: Ticker TINY
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:53:03 - scrape.scrape_info - ERROR - Rank 3: Ticker HRZN
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:53:03 - scrape.scrape_info - ERROR - Rank 3: Ticker HRZN
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:54:03 - scrape.scrape_info - ERROR - Rank 1: Ticker KCAP
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:54:03 - scrape.scrape_info - ERROR - Rank 1: Ticker KCAP
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:54:26 - scrape.scrape_info - ERROR - Rank 2: Ticker KIPO
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:54:26 - scrape.scrape_info - ERROR - Rank 2: Ticker KIPO
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:54:36 - scrape.scrape_info - ERROR - Rank 3: Ticker MAIN
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:54:36 - scrape.scrape_info - ERROR - Rank 3: Ticker MAIN
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:54:41 - scrape.scrape_info - ERROR - Rank 0: Ticker TAXI
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:54:41 - scrape.scrape_info - ERROR - Rank 0: Ticker TAXI
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:54:44 - scrape.scrape_info - ERROR - Rank 1: Ticker MCC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:54:44 - scrape.scrape_info - ERROR - Rank 1: Ticker MCC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:54:44 - scrape.scrape_info - ERROR - Rank 3: Ticker MCGC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:54:44 - scrape.scrape_info - ERROR - Rank 3: Ticker MCGC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:55:15 - scrape.scrape_info - ERROR - Rank 1: Ticker MRCC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:55:15 - scrape.scrape_info - ERROR - Rank 1: Ticker MRCC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:55:30 - scrape.scrape_info - ERROR - Rank 3: Ticker MVC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:55:30 - scrape.scrape_info - ERROR - Rank 3: Ticker MVC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:55:47 - scrape.scrape_info - ERROR - Rank 0: Ticker NGPC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:55:47 - scrape.scrape_info - ERROR - Rank 0: Ticker NGPC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:56:03 - scrape.scrape_info - ERROR - Rank 2: Ticker NMFC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:56:03 - scrape.scrape_info - ERROR - Rank 2: Ticker NMFC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:57:18 - scrape.scrape_info - ERROR - Rank 3: Ticker JGT
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 138, in scrape_info
+    page = requests.get(url_stub + ticker, timeout=60.00)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 279, in request
+    resp = self.send(prep, stream=stream, timeout=timeout, verify=verify, cert=cert, proxies=proxies)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 374, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 215, in send
+    raise Timeout(e)
+Timeout: HTTPConnectionPool(host='www.cefconnect.com', port=80): Request timed out. (timeout=60.0)
+2013-08-17 16:57:18 - scrape.scrape_info - ERROR - Rank 3: Ticker JGT
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 138, in scrape_info
+    page = requests.get(url_stub + ticker, timeout=60.00)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 279, in request
+    resp = self.send(prep, stream=stream, timeout=timeout, verify=verify, cert=cert, proxies=proxies)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 374, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 215, in send
+    raise Timeout(e)
+Timeout: HTTPConnectionPool(host='www.cefconnect.com', port=80): Request timed out. (timeout=60.0)
+2013-08-17 16:57:19 - scrape.scrape_info - ERROR - Rank 0: Ticker JDD
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 138, in scrape_info
+    page = requests.get(url_stub + ticker, timeout=60.00)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 279, in request
+    resp = self.send(prep, stream=stream, timeout=timeout, verify=verify, cert=cert, proxies=proxies)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 374, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 215, in send
+    raise Timeout(e)
+Timeout: HTTPConnectionPool(host='www.cefconnect.com', port=80): Request timed out. (timeout=60.0)
+2013-08-17 16:57:19 - scrape.scrape_info - ERROR - Rank 0: Ticker JDD
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 138, in scrape_info
+    page = requests.get(url_stub + ticker, timeout=60.00)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 279, in request
+    resp = self.send(prep, stream=stream, timeout=timeout, verify=verify, cert=cert, proxies=proxies)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 374, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 215, in send
+    raise Timeout(e)
+Timeout: HTTPConnectionPool(host='www.cefconnect.com', port=80): Request timed out. (timeout=60.0)
+2013-08-17 16:57:19 - scrape.scrape_info - ERROR - Rank 2: Ticker NCP
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 138, in scrape_info
+    page = requests.get(url_stub + ticker, timeout=60.00)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 279, in request
+    resp = self.send(prep, stream=stream, timeout=timeout, verify=verify, cert=cert, proxies=proxies)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 374, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 215, in send
+    raise Timeout(e)
+Timeout: HTTPConnectionPool(host='www.cefconnect.com', port=80): Request timed out. (timeout=60.0)
+2013-08-17 16:57:19 - scrape.scrape_info - ERROR - Rank 2: Ticker NCP
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 138, in scrape_info
+    page = requests.get(url_stub + ticker, timeout=60.00)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 279, in request
+    resp = self.send(prep, stream=stream, timeout=timeout, verify=verify, cert=cert, proxies=proxies)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 374, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 215, in send
+    raise Timeout(e)
+Timeout: HTTPConnectionPool(host='www.cefconnect.com', port=80): Request timed out. (timeout=60.0)
+2013-08-17 16:57:20 - scrape.scrape_info - ERROR - Rank 1: Ticker NAD
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 138, in scrape_info
+    page = requests.get(url_stub + ticker, timeout=60.00)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 279, in request
+    resp = self.send(prep, stream=stream, timeout=timeout, verify=verify, cert=cert, proxies=proxies)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 374, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 215, in send
+    raise Timeout(e)
+Timeout: HTTPConnectionPool(host='www.cefconnect.com', port=80): Request timed out. (timeout=60.0)
+2013-08-17 16:57:20 - scrape.scrape_info - ERROR - Rank 1: Ticker NAD
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 138, in scrape_info
+    page = requests.get(url_stub + ticker, timeout=60.00)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 55, in get
+    return request('get', url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/api.py", line 44, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 279, in request
+    resp = self.send(prep, stream=stream, timeout=timeout, verify=verify, cert=cert, proxies=proxies)
+  File "/usr/local/lib/python2.7/dist-packages/requests/sessions.py", line 374, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 215, in send
+    raise Timeout(e)
+Timeout: HTTPConnectionPool(host='www.cefconnect.com', port=80): Request timed out. (timeout=60.0)
