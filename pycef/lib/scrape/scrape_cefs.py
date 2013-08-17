@@ -31,7 +31,7 @@ class CEFInfo(object):
     
     def __init__(self, ticker_db, ticker_col, cef_db, cef_col):
                 
-        self.logger = logging.getLogger('scrape.scrape_cefs.CEFInfo')
+        #self.logger = logging.getLogger('scrape.scrape_cefs.CEFInfo')
         self.critical_logger = logging.getLogger(
                                         'scrape.scrape_cefs.CEFInfo.critical')
         self.compare_list = None
@@ -57,7 +57,7 @@ class CEFInfo(object):
                 self.compare_list = self.compare_list['list']  
                 return True
         except AttributeError:
-            self.logger.exception('get_tickers')
+            #self.logger.exception('get_tickers')
             self.critical_logger.critical('get_tickers failed')
             return False    
         
@@ -68,12 +68,12 @@ class CEFInfo(object):
             Returns bool
         '''
             
-        self.logger.debug('starting pool') 
+        #self.logger.debug('starting pool') 
 
         try:                 
             pool = multiprocessing.Pool(BATCH_SIZE)
         except AttributeError:
-            self.logger.exception('get_info: error starting pool')
+            #self.logger.exception('get_info: error starting pool')
             self.critical_logger.critical('get_info failed')
 
                 
@@ -88,7 +88,7 @@ class CEFInfo(object):
                                   [[i, args_dict] for i in range(BATCH_SIZE)]
                                   )
         except AttributeError:
-            self.logger.exception('get_info: error map_async')
+            #self.logger.exception('get_info: error map_async')
             self.critical_logger.critical('get_info failed')
 
                                         
@@ -98,16 +98,16 @@ class CEFInfo(object):
         pool.close()
         pool.join()
             
-        self.logger.debug('pool joined')
+        #self.logger.debug('pool joined')
 
         flag = False
         for result in results:
             if result[0] == False:
-                self.logger.info(
-                                    'get_info: ' + \
-                                    'Unable to get info from ' + \
-                                    str(result[1])
-                                )
+#                self.logger.info(
+#                                    'get_info: ' + \
+#                                    'Unable to get info from ' + \
+#                                    str(result[1])
+#                                )
                 flag = True
         if flag == True:
             return False
