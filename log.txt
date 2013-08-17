@@ -1256,3 +1256,173 @@ Traceback (most recent call last):
   File "/usr/local/lib/python2.7/dist-packages/requests/adapters.py", line 215, in send
     raise Timeout(e)
 Timeout: HTTPConnectionPool(host='www.cefconnect.com', port=80): Request timed out. (timeout=60.0)
+2013-08-17 16:58:03 - scrape.scrape_info - ERROR - Rank 1: Ticker NMD
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:58:03 - scrape.scrape_info - ERROR - Rank 1: Ticker NMD
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:59:21 - scrape.scrape_info - ERROR - Rank 1: Ticker OFS
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:59:21 - scrape.scrape_info - ERROR - Rank 1: Ticker OFS
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:59:29 - scrape.scrape_info - ERROR - Rank 1: Ticker PFLT
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:59:29 - scrape.scrape_info - ERROR - Rank 1: Ticker PFLT
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:59:50 - scrape.scrape_info - ERROR - Rank 2: Ticker PNNT
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 16:59:50 - scrape.scrape_info - ERROR - Rank 2: Ticker PNNT
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:00:10 - scrape.scrape_info - ERROR - Rank 0: Ticker PSEC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:00:10 - scrape.scrape_info - ERROR - Rank 0: Ticker PSEC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:00:24 - scrape.scrape_info - ERROR - Rank 0: Ticker RAND
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:00:24 - scrape.scrape_info - ERROR - Rank 0: Ticker RAND
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:00:39 - scrape.scrape_info - ERROR - Rank 1: Ticker SAR
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:00:39 - scrape.scrape_info - ERROR - Rank 1: Ticker SAR
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:00:40 - scrape.scrape_info - ERROR - Rank 3: Ticker SLRC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:00:40 - scrape.scrape_info - ERROR - Rank 3: Ticker SLRC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:00:43 - scrape.scrape_info - ERROR - Rank 0: Ticker SUNS
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:00:43 - scrape.scrape_info - ERROR - Rank 0: Ticker SUNS
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:01:02 - scrape.scrape_info - ERROR - Rank 0: Ticker TCPC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:01:02 - scrape.scrape_info - ERROR - Rank 0: Ticker TCPC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:01:11 - scrape.scrape_info - ERROR - Rank 2: Ticker SCM
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:01:11 - scrape.scrape_info - ERROR - Rank 2: Ticker SCM
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:01:18 - scrape.scrape_info - ERROR - Rank 1: Ticker TCRD
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:01:18 - scrape.scrape_info - ERROR - Rank 1: Ticker TCRD
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:01:29 - scrape.scrape_info - ERROR - Rank 3: Ticker TCAP
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:01:29 - scrape.scrape_info - ERROR - Rank 3: Ticker TCAP
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:01:38 - scrape.scrape_info - ERROR - Rank 2: Ticker TICC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:01:38 - scrape.scrape_info - ERROR - Rank 2: Ticker TICC
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:01:56 - scrape.scrape_info - ERROR - Rank 3: Ticker HIF
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:01:56 - scrape.scrape_info - ERROR - Rank 3: Ticker HIF
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:02:26 - scrape.scrape_info - ERROR - Rank 0: Ticker WHF
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:02:26 - scrape.scrape_info - ERROR - Rank 0: Ticker WHF
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:02:53 - scrape.scrape_info - ERROR - Rank 2: Ticker FSFR
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range
+2013-08-17 17:02:53 - scrape.scrape_info - ERROR - Rank 2: Ticker FSFR
+Traceback (most recent call last):
+  File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
+    date = date[2].split('/')
+IndexError: list index out of range

@@ -9,8 +9,8 @@ setup(
     packages = find_packages(),
     # Project uses reStructuredText, so ensure that the docutils get
     # installed or upgraded on the target machine
-    install_requires = ['BeautifulSoup','configobj','sqlalchemy',
-                        'pymongo', 'requests', 'logging'],
+    install_requires = ['BeautifulSoup','configobj',
+                        'pymongo', 'requests'],
     package_data = {
         # If any package contains *.txt or *.rst files, include them:
         '': ['*.txt', '*.rst', '*.conf', '*.csv'],
