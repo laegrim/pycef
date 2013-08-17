@@ -14,10 +14,10 @@ from email.MIMEText import MIMEText
 from email.Utils import COMMASPACE, formatdate
 from email import Encoders
 from configobj import ConfigObj
-from pycef.lib.conf.constants import LOG_CONF_LOC, SCRAPE_CONF_LOC, CONF_DIR
+from pycef.lib.conf.constants import LOG_DICT, SCRAPE_CONF_LOC, CONF_DIR
 import pycef.execution.export_data as Export
 
-logging.config.dictConfig(LOG_CONF_LOC)
+logging.config.dictConfig(LOG_DICT)
 
 class SendMail(object):
     '''class SendMail handles actually sending the cef information

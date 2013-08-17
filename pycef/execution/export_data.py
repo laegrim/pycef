@@ -10,10 +10,10 @@ import logging.config
 import re
 from configobj import ConfigObj
 from pycef.lib.mongo.mongo_interface import Mongo
-from pycef.lib.conf.constants import LOG_CONF_LOC
+from pycef.lib.conf.constants import LOG_DICT
 
 
-logging.config.dictConfig(LOG_CONF_LOC)
+logging.config.dictConfig(LOG_DICT)
 
 class ExportCSV(object):
     ''' Class ExportCSV handles the grabbing and bundling of db 
