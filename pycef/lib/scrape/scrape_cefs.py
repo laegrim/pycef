@@ -18,6 +18,8 @@ from pycef.lib.mongo.mongo_interface import Mongo
 logging.config.fileConfig(LOG_CONF_LOC)
 START_LOGGER = logging.getLogger('scrape.scrape_cefs')
 
+print "START_LOGGER"
+
 try:
     BATCH_SIZE = multiprocessing.cpu_count()
 except NotImplementedError:
@@ -32,6 +34,7 @@ class CEFInfo(object):
     def __init__(self, ticker_db, ticker_col, cef_db, cef_col):
                 
         #self.logger = logging.getLogger('scrape.scrape_cefs.CEFInfo')
+        print "scrape.scrape_cefs.CEFInfo"
         self.critical_logger = logging.getLogger(
                                         'scrape.scrape_cefs.CEFInfo.critical')
         self.compare_list = None

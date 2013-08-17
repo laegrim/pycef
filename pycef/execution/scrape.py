@@ -6,12 +6,18 @@ Created on Mon May 20 16:28:05 2013
 """
 
 import logging
+print 'logigng imported'
 import logging.config
+print 'logging.config imported'
 import pycef.lib.scrape.scrape_cefs as scrape_cefs
+print 'pycef.lib.scrape.scrape_cefs imported'
 import pycef.lib.scrape.scrape_tickers as scrape_tickers
+print 'pycef.lib.scrape.scrape_tickers imported'
 from pycef.lib.conf.constants import LOG_CONF_LOC
+print 'pycef.lib.conf.constants imported'
 
 logging.config.fileConfig(LOG_CONF_LOC)
+print LOG_CONF_LOC
 
 class Scrape(object):
     '''Simple script tying together everything else
