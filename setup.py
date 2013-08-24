@@ -5,11 +5,11 @@ from setuptools import setup, find_packages
 
 setup(
     name = "PyCef",
-    version = "0.0.1",
+    version = "0.0.6",
     packages = find_packages(),
     # Project uses reStructuredText, so ensure that the docutils get
     # installed or upgraded on the target machine
-    install_requires = ['BeautifulSoup','configobj',
+    install_requires = ['BeautifulSoup','configobj', 'multiprocessing',
                         'pymongo', 'requests'],
     package_data = {
         # If any package contains *.txt or *.rst files, include them:

@@ -71,7 +71,8 @@ class ExportCSV(object):
             
         if self.options_list[0] == 'ALL':
             for ticker in self.db_list:
-                ticker_list = [ticker['_id']]
+                ticker_list = [ticker['_id'], ticker['dist_freq'], 
+                               ticker['tax_classification']]
                 for days_values in ticker['history']:
                     day_info = []
                     try:
@@ -88,7 +89,8 @@ class ExportCSV(object):
                 self.info_list.append(ticker_list)
         else:
             for ticker in self.db_list:
-                ticker_list = [ticker['_id']]
+                ticker_list = [ticker['_id'], ticker['dist_freq'], 
+                               ticker['tax_classification']]
                 num_days = self.options_list[0]
                 for days_values in ticker['history'][:num_days]:
                     day_info = []
@@ -112,17 +114,20 @@ class ExportCSV(object):
         
         
         for ticker in self.info_list:
-            for day in ticker[1:]:
+            for day in ticker[3:]:
                 day = [re.sub('[$,%;&]', '', str(val)) for val in day]
                 self.formatted_lines.append(ticker[0] + "," + \
+                                    ticker[1] + "," + ticker[2] + "," + \
                                     ",".join([val for val in day]) + \
                                     "\n")
                                     
         self.options_list[0] = '_id'
-        self.options_list.insert(1, 'date')
-        self.options_list.insert(2, 'curr_price')
-        self.options_list.insert(3, 'curr_dis')
-        self.options_list.insert(4, 'curr_nav')
+        self.options_list.insert(1, 'dist_freq')
+        self.options_list.insert(2, 'tax_classification')
+        self.options_list.insert(3, 'date')
+        self.options_list.insert(4, 'curr_price')
+        self.options_list.insert(5, 'curr_dis')
+        self.options_list.insert(6, 'curr_nav')
         self.formatted_lines.insert(0, ",".join(self.options_list) + "\n")
 
     def write_info(self, output_file_loc):

@@ -24,7 +24,6 @@ except NotImplementedError:
     START_LOGGER.exception('multiprocessing.cpu_count() not implemented')
     BATCH_SIZE = 4
 
-
 class CEFInfo(object):
     '''Bundle methods for grabbing current CEF information from cefconnect.com
     '''
@@ -40,13 +39,13 @@ class CEFInfo(object):
         self.cef_db = cef_db
         self.cef_col = cef_col
         self.interface = None
-    
+            
     def get_tickers(self):
         ''' CEFInfo.get_tickers()
             Gets current list of tickers from mongodb database
             Returns bool
         '''
-    
+            
         try:
             with Mongo() as self.interface:
                 self.compare_list = self.interface.pull_from_mongo(
@@ -60,14 +59,14 @@ class CEFInfo(object):
             self.logger.exception('get_tickers')
             self.critical_logger.critical('get_tickers failed')
             return False    
-        
+                    
     def get_info(self):
         ''' CEFInfo.get_info
             Starts threads to get relevant information from cefconnect
             Calls scrape_info(<args_list>)
             Returns bool
         '''
-            
+                    
         self.logger.debug('starting pool') 
 
         try:                 
@@ -129,7 +128,7 @@ def scrape_info(args_list):
     url_stub = 'http://www.cefconnect.com/Details/Summary.aspx?ticker='   
     error_list = []
     no_errors = True
-                
+                    
     while i < len(compare_list):
             
         try:
@@ -316,14 +315,18 @@ def scrape_info(args_list):
             '_52_wk_low_dis': _52_wk_low_dis,
             'dist': dist,
             'dist_ammt': dist_ammt,
-            'dist_freq': dist_freq,
             'ttl_net_ast': ttl_net_ast,
             'ttl_cmm_ast': ttl_cmm_ast,
             'cmm_shr_out': cmm_shr_out,
-            'category': category
             }
                         
-            ticker_info['history'].insert(0, curr_hist) 
+            ticker_info['history'].insert(0, curr_hist)
+            
+            if category != 'Missing':
+                ticker_info['tax_classification'] = category
+                
+            if dist_freq != 'Missing':
+                ticker_info['dist_freq'] = dist_freq
             
             # push to Mongo
             with Mongo() as interface:

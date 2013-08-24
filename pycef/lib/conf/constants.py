@@ -14,58 +14,58 @@ LOG_DICT = {
     'loggers' : {
         'root' : {
             'level' : 'DEBUG',
-            'handlers' : ['rotatingFile', 'email'],
-            'propagate' : '0'
+            'handlers' : ['rotatingFile'],
+            'propagate' : 0
             },
         'scrape' : {
             'level' : 'DEBUG',
             'handlers' : ['console', 'rotatingFile', 'email'],
-            'propagate' : '0'
+            'propagate' : 0
             },
         'send_mail' : {
             'level' : 'DEBUG',
             'handlers' : ['console', 'rotatingFile', 'email'],
-            'propagate' : '0'
+            'propagate' : 0
             },
         'send_mail.GenerateAttachment' : {
             'level' : 'DEBUG',
-            'handlers' : ['console', 'rotatingFile', 'email'],
-            'propagate' : '0'
+            'handlers' : ['console', 'rotatingFile'],
+            'propagate' : 0
             },
         'scrape.mongo_interface.mongoWrapper' : {
             'level' : 'DEBUG',
-            'handlers' : ['console', 'rotatingFile', 'email'],
-            'propagate' : '0'
+            'handlers' : ['console', 'rotatingFile'],
+            'propagate' : 0
             },
         'scrape.scrape_cefs' : {
             'level' : 'DEBUG',
             'handlers' : ['console', 'rotatingFile'],
-            'propagate' : '0'
+            'propagate' : 0
             },
         'scrape.scrape_cefs.CEFInfo' : {
             'level' : 'DEBUG',
             'handlers' : ['console', 'rotatingFile'],
-            'propagate' : '0'
+            'propagate' : 0
             },
         'scrape.scrape_cefs.CEFInfo.critical' : {
             'level' : 'CRITICAL',
-            'handlers' : ['console', 'rotatingFile', 'email'],
-            'propagate' : '0'
+            'handlers' : ['console', 'rotatingFile'],
+            'propagate' : 0
             },
         'scrape.scrape_info' : {
             'level' : 'DEBUG',
             'handlers' : ['console', 'rotatingFile'],
-            'propagate' : '0'
+            'propagate' : 0
             },
         'scrape.scrape_info.critical' : {
             'level' : 'CRITICAL',
-            'handlers' : ['console', 'rotatingFile', 'email'],
-            'propagate' : '0'
+            'handlers' : ['console', 'rotatingFile'],
+            'propagate' : 0
             },
         'scrape.scrape_tickers': {
             'level' : 'DEBUG',
-            'handlers' : ['console', 'rotatingFile', 'email'],
-            'propagate' : '0'
+            'handlers' : ['console', 'rotatingFile'],
+            'propagate' : 0
             }
         },
     'handlers' : {
