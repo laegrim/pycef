@@ -50,7 +50,7 @@ day=*
 month=*
 day_of_wk=*
 noti_email=steich@gmail.com
-recp_email=steich@gmail.com,
+recp_email=steich@gmail.com
 # gbeauvais@gmail.com
 
 #values directly correspond to crontab values

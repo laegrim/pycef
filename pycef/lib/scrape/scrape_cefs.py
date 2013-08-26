@@ -128,6 +128,8 @@ def scrape_info(args_list):
     url_stub = 'http://www.cefconnect.com/Details/Summary.aspx?ticker='   
     error_list = []
     no_errors = True
+    reg = re.compile('[1234567890$]')
+
                     
     while i < len(compare_list):
             
@@ -251,14 +253,20 @@ def scrape_info(args_list):
             
             # If all of the data isn't there, it's probably contaminated,
             # This information isn't vital though, so safe to insert missing 
-            if len(text) != 3:
+            if len(text) == 3:
+                dist = text[0]
+                dist_ammt = text[1]                
+                dist_freq = text[2]
+                
+            else if len(text) == 4 and len(reg.findall(text[3])) == 0:
+                dist = text[1]
+                dist_ammt = text[2]
+                dist_freq = text[3]
+                
+            else:
                 dist = 'Missing'
                 dist_ammt = 'Missing'
                 dist_freq = 'Missing'
-            else:
-                dist = text[0]
-                dist_ammt = text[1]
-                dist_freq = text[2]
             
             # Parse soup for basic fund information 
             
