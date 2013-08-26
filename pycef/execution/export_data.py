@@ -114,14 +114,14 @@ class ExportCSV(object):
         
         
         for ticker in self.info_list:
-            for head_vals in ticker[:2]:
-                head_vals = [re.sub('[;]'), '', str(val) for val in head_vals]
-                self.formatted_lines.append(",".join([val for val in head_vals]
-                                            ) + "\n"))
+            
+            head_vals = ','.join([re.sub('[;]', '',
+                            str(val)) for val in ticker[:3]]) + ','            
+            
             for day in ticker[3:]:
                 day = [re.sub('[$,%;&]', '', str(val)) for val in day]
-                self.formatted_lines.append(",".join([val for val in day]) + \
-                                            "\n")
+                self.formatted_lines.append(head_vals + ",".join(
+                                            [val for val in day]) + "\n")
                                     
         self.options_list[0] = '_id'
         self.options_list.insert(1, 'dist_freq')
