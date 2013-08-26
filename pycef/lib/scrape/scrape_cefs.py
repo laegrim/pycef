@@ -258,7 +258,7 @@ def scrape_info(args_list):
                 dist_ammt = text[1]                
                 dist_freq = text[2]
                 
-            else if len(text) == 4 and len(reg.findall(text[3])) == 0:
+            elif len(text) == 4 and len(reg.findall(text[3])) == 0:
                 dist = text[1]
                 dist_ammt = text[2]
                 dist_freq = text[3]
