@@ -5,6 +5,9 @@ Created on Mon May 20 16:28:05 2013
 @author: laegrim
 """
 
+import sys
+sys.path.append('home/ubuntu/pycef/pycef')
+
 import logging
 import logging.config
 import pycef.lib.scrape.scrape_cefs as scrape_cefs
