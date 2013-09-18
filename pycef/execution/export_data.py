@@ -72,7 +72,8 @@ class ExportCSV(object):
         if self.options_list[0] == 'ALL':
             for ticker in self.db_list:
                 ticker_list = [ticker['_id'], ticker['dist_freq'], 
-                               ticker['tax_classification']]
+                               ticker['tax_classification'], 
+                                ticker['dist_type']]
                 for days_values in ticker['history']:
                     day_info = []
                     try:
@@ -90,7 +91,8 @@ class ExportCSV(object):
         else:
             for ticker in self.db_list:
                 ticker_list = [ticker['_id'], ticker['dist_freq'], 
-                               ticker['tax_classification']]
+                               ticker['tax_classification'], 
+                                ticker['dist_type']]
                 num_days = self.options_list[0]
                 for days_values in ticker['history'][:num_days]:
                     day_info = []
@@ -116,9 +118,9 @@ class ExportCSV(object):
         for ticker in self.info_list:
             
             head_vals = ','.join([re.sub('[;]', '',
-                            str(val)) for val in ticker[:3]]) + ','            
+                            str(val)) for val in ticker[:4]]) + ','            
             
-            for day in ticker[3:]:
+            for day in ticker[4:]:
                 day = [re.sub('[$,%;&]', '', str(val)) for val in day]
                 self.formatted_lines.append(head_vals + ",".join(
                                             [val for val in day]) + "\n")
@@ -126,10 +128,11 @@ class ExportCSV(object):
         self.options_list[0] = '_id'
         self.options_list.insert(1, 'dist_freq')
         self.options_list.insert(2, 'tax_classification')
-        self.options_list.insert(3, 'date')
-        self.options_list.insert(4, 'curr_price')
-        self.options_list.insert(5, 'curr_dis')
-        self.options_list.insert(6, 'curr_nav')
+        self.options_list.insert(3, 'dist_type')
+        self.options_list.insert(4, 'date')
+        self.options_list.insert(5, 'curr_price')
+        self.options_list.insert(6, 'curr_dis')
+        self.options_list.insert(7, 'curr_nav')
         self.formatted_lines.insert(0, ",".join(self.options_list) + "\n")
 
     def write_info(self, output_file_loc):

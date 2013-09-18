@@ -249,21 +249,24 @@ def scrape_info(args_list):
                 continue            
                         
             text = [row.text for row in table]
-            text = text[2::3]
+            text = text[3::4]
             
             # If all of the data isn't there, it's probably contaminated,
             # This information isn't vital though, so safe to insert missing 
-            if len(text) == 3:
-                dist = text[0]
-                dist_ammt = text[1]                
-                dist_freq = text[2]
-                
-            elif len(text) == 4 and len(reg.findall(text[3])) == 0:
+            if len(text) == 4:
+                dist_type = text[0]
                 dist = text[1]
-                dist_ammt = text[2]
+                dist_ammt = text[2]                
                 dist_freq = text[3]
                 
+            elif len(text) == 5 and len(reg.findall(text[4])) == 0:
+                dist_type = text[1]
+                dist = text[2]
+                dist_ammt = text[3]
+                dist_freq = text[4]
+                
             else:
+                dist_type = 'Missing'
                 dist = 'Missing'
                 dist_ammt = 'Missing'
                 dist_freq = 'Missing'
@@ -335,6 +338,9 @@ def scrape_info(args_list):
                 
             if dist_freq != 'Missing':
                 ticker_info['dist_freq'] = dist_freq
+                
+            if dist_type != 'Missing':
+                ticker_info['dist_type'] = dist_type
             
             # push to Mongo
             with Mongo() as interface:

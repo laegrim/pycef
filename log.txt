@@ -1426,3 +1426,11 @@ Traceback (most recent call last):
   File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
     date = date[2].split('/')
 IndexError: list index out of range
+2013-09-17 19:33:21 - scrape.scrape_cefs.CEFInfo - DEBUG - starting pool
+2013-09-17 19:39:58 - scrape.scrape_cefs.CEFInfo - DEBUG - pool joined
+2013-09-17 19:39:58 - scrape.scrape_cefs.CEFInfo - INFO - get_info: Unable to get info from ['ARCC', 'GARS', 'GAIN', 'GSVC', 'TAXI', 'NGPC', 'PSEC', 'RAND', 'SUNS', 'TCPC', 'WHF', 'FSFR']
+2013-09-17 19:39:58 - scrape.scrape_cefs.CEFInfo - INFO - get_info: Unable to get info from ['NAI', 'AINV', 'CORR', 'SVVC', 'FULL', 'HTGC', 'KCAP', 'MCC', 'MRCC', 'NMD', 'OFS', 'PFLT', 'SAR', 'TCRD']
+2013-09-17 19:39:58 - scrape.scrape_cefs.CEFInfo - INFO - get_info: Unable to get info from ['ACAS', 'BKCC', 'CSWC', 'EQS', 'FDUS', 'GBDC', 'TINY', 'KIPO', 'NMFC', 'PNNT', 'SCM', 'TICC']
+2013-09-17 19:39:58 - scrape.scrape_cefs.CEFInfo - INFO - get_info: Unable to get info from ['ETUB', 'FSC', 'GLUXR', 'GLAD', 'HCAP', 'HRZN', 'MAIN', 'MCGC', 'MVC', 'SLRC', 'TF', 'TCAP', 'HIF']
+2013-09-17 19:39:58 - scrape - WARNING - self.cef_get.get_info() failed
+2013-09-17 20:31:52 - send_mail.GenerateAttachment - DEBUG - 597

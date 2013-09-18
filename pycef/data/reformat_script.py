@@ -31,8 +31,9 @@ for cef in coll.find():
     
     dist_freq = 'Missing'
     tax_category = 'Missing'
+    dist_type = 'Missing'
     
-    if cef.has_key('dist_freq') and cef.has_key('tax_classification'):
+    if cef.has_key('dist_freq') and cef.has_key('tax_classification') and cef.has_key('dist_type'):
         try:
             page = requests.get(url_stub + cef['_id'], timeout=60.00)
             contents = page.content
@@ -45,16 +46,19 @@ for cef in coll.find():
                                                     'ignore')
             table = soup.find(id=re.compile('DistrDetails')).findChildren()
             text = [row.text for row in table]
-            text = text[2::3]
+            text = text[3::4]
 
-            if len(reg.findall(text[2])) == 0:
-                dist_freq = text[2]                     
+            if len(reg.findall(text[3])) == 0:
+                dist_freq = text[3]
+                dist_type = text[0]                     
             
             else:
-                if len(text) >= 4 and len(reg.findall(text[3])) == 0:
-                    dist_freq = text[3]
+                if len(text) >= 4 and len(reg.findall(text[4])) == 0:
+                    dist_freq = text[4]
+                    dist_type = text[1]
             
-            logger.info('CEF, Tax Category, Dist_Freq : ' + cef['_id'] + ', ' + tax_category + ', ' + dist_freq)
+            logger.info('CEF, Tax Category, Dist_Freq, Dist_Type: ' + cef['_id'] + \
+            ', ' + tax_category + ', ' + dist_freq + ', ' + dist_type)
             
         except Exception:
             logger.exception('Did not work for cef: ' + cef['_id'])
@@ -71,5 +75,6 @@ for cef in coll.find():
             
         
     cef['dist_freq'] = dist_freq
+    cef['dist_type'] = dist_type
     cef['tax_classification'] = tax_category
     coll.save(cef)
