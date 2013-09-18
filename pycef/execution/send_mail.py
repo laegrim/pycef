@@ -4,6 +4,8 @@ Created on Wed May 29 11:16:38 2013
 
 @author: laegrim
 """
+import sys
+sys.path.append('/home/ubuntu/pycef/pycef/')
 
 import smtplib
 import logging
