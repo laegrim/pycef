@@ -94,3 +94,4 @@ def exp_mov_avgs(series, duration):
         avgs.append(exp_mov_avg([series[i] for i in range(i, duration + i)], 
                                  duration))
     return avgs
+    

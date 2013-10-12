@@ -33,7 +33,8 @@ def segment_by_date(data, start_date, end_date, segment_size):
     '''
     
     date = start_date
-    date_segments = []
+    data_segments = []
+    date_ranges = []
     
     #date_ranges is a list of tuples defining the segments
     while date < end_date:
@@ -41,7 +42,7 @@ def segment_by_date(data, start_date, end_date, segment_size):
         temp_date = date + segment_size
         date_ranges.append((date, temp_date))
         date = temp_date
-        
+                
     #segment the data into date ranges
     for date_range in date_ranges:
     
@@ -50,8 +51,8 @@ def segment_by_date(data, start_date, end_date, segment_size):
         #for each dictionary in the data list
         for chunk in data:
             #if the data date falls into the current date segment
-            if date_range[0] > datetime.datetime.strptime(data['date'],
-                                 '%Y%m%d').date() >= date_range[1]:
+            if date_range[1] > datetime.datetime.strptime(chunk['date'],
+                                 '%Y%m%d') >= date_range[0]:
                     #append the data to the current segment
                     range_data.append(chunk)
                     #and take the data out of the original structure
