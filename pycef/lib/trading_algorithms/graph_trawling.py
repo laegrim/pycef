@@ -146,6 +146,81 @@ def weighted_rising_values(graph, data, day):
             prev_val = prev_val[0]
                
             #compute the weighted gain
+            gain = (curr_val / prev_val)
+            diff = 1 - graph.edge[node][neighbor]['weight']
+            if gain <= 0:
+                diff = -diff
+            else:
+                weighted_gain = (1 + (.1 - diff)) * gain
+                
+            neighbor_weighted_gains.append((curr_val / prev_val))
+            
+        #use the average of each neighbors weighted gains as the rising value
+        rising_values[node] = (sum(neighbor_weighted_gains)/
+                                len(neighbor_weighted_gains))
+        
+    return rising_values
+
+def weighted_rising_values_relative(graph, data, day):
+    '''
+    Rising values for a node are calculated by the sum of the
+    average gain of the neighbors of that node
+    '''
+    
+    #store data here to be returned
+    rising_values  = {}
+    
+    #current day
+    day = datetime.datetime.strptime(day, '%Y%m%d')
+    #print "Calculating Rising Valuse For Date: " + str(day)
+    
+    #day before
+    day_before = day + relativedelta(days=-1)
+    
+    #for node in the graph
+    for node in graph:
+        
+        neighbor_weighted_gains = []
+        
+        #for each node find neighbors for calculations
+        for neighbor in graph.neighbors(node):
+            
+            #find the weight of the edges between each node, neighbor pair
+            #edge_weight = graph.edge[node][neighbor]['weight']
+            
+            #find the current price of the neighbor
+            curr_val = [date['curr_price'] for date in [
+                cef for cef in data if cef['_id'] == neighbor][0]['history'] 
+                if date['date'] == day.strftime('%Y%m%d')]
+                                
+            #make sure that there is a price for this day
+            if curr_val == []:
+                #if not, it's a holliday or a weekend
+                return None
+                
+            #pop out of the list
+            curr_val = curr_val[0]
+            
+            #find the previous price of the neighbor
+            prev_val = [date['curr_price'] for date in 
+                [cef for cef in data if cef['_id'] == neighbor][0]['history']
+                if date['date'] == day_before.strftime('%Y%m%d')]
+            
+            #Go to last day before current day in which there is data
+            #Corrects for situations in which the last day of trading was
+            #More than one day ago (weekends, holidays, etc...)
+            while prev_val == []:
+                
+                prev_val = [date['curr_price'] for date in 
+                [cef for cef in data if cef['_id'] == neighbor][0]['history']
+                if date['date'] == day_before.strftime('%Y%m%d')]
+                    
+                day_before += relativedelta(days=-1)
+            
+            #pop prev_val out of the list
+            prev_val = prev_val[0]
+               
+            #compute the weighted gain
             neighbor_weighted_gains.append((curr_val / prev_val))
             
         #use the average of each neighbors weighted gains as the rising value
