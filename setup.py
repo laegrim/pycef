@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 setup(
     name = "PyCef",
-    version = "0.0.6",
+    version = "0.0.9",
     packages = find_packages(),
     # Project uses reStructuredText, so ensure that the docutils get
     # installed or upgraded on the target machine

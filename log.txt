@@ -1426,3 +1426,48 @@ Traceback (most recent call last):
   File "pycef/lib/scrape/scrape_cefs.py", line 187, in scrape_info
     date = date[2].split('/')
 IndexError: list index out of range
+2013-09-17 19:33:21 - scrape.scrape_cefs.CEFInfo - DEBUG - starting pool
+2013-09-17 19:39:58 - scrape.scrape_cefs.CEFInfo - DEBUG - pool joined
+2013-09-17 19:39:58 - scrape.scrape_cefs.CEFInfo - INFO - get_info: Unable to get info from ['ARCC', 'GARS', 'GAIN', 'GSVC', 'TAXI', 'NGPC', 'PSEC', 'RAND', 'SUNS', 'TCPC', 'WHF', 'FSFR']
+2013-09-17 19:39:58 - scrape.scrape_cefs.CEFInfo - INFO - get_info: Unable to get info from ['NAI', 'AINV', 'CORR', 'SVVC', 'FULL', 'HTGC', 'KCAP', 'MCC', 'MRCC', 'NMD', 'OFS', 'PFLT', 'SAR', 'TCRD']
+2013-09-17 19:39:58 - scrape.scrape_cefs.CEFInfo - INFO - get_info: Unable to get info from ['ACAS', 'BKCC', 'CSWC', 'EQS', 'FDUS', 'GBDC', 'TINY', 'KIPO', 'NMFC', 'PNNT', 'SCM', 'TICC']
+2013-09-17 19:39:58 - scrape.scrape_cefs.CEFInfo - INFO - get_info: Unable to get info from ['ETUB', 'FSC', 'GLUXR', 'GLAD', 'HCAP', 'HRZN', 'MAIN', 'MCGC', 'MVC', 'SLRC', 'TF', 'TCAP', 'HIF']
+2013-09-17 19:39:58 - scrape - WARNING - self.cef_get.get_info() failed
+2013-09-17 20:31:52 - send_mail.GenerateAttachment - DEBUG - 597
+2013-09-18 02:50:46 - scrape.scrape_cefs.CEFInfo - DEBUG - starting pool
+2013-09-18 03:22:05 - scrape.scrape_cefs.CEFInfo - DEBUG - pool joined
+2013-09-18 03:22:05 - scrape.scrape_cefs.CEFInfo - INFO - get_info: Unable to get info from ['NAI', 'ACAS', 'AINV', 'ARCC', 'BKCC', 'CSWC', 'CORR', 'EQS', 'ETUB', 'FDUS', 'FSC', 'SVVC', 'FULL', 'GLUXR', 'GARS', 'GLAD', 'GAIN', 'GBDC', 'GSVC', 'TINY', 'HCAP', 'HTGC', 'HRZN', 'KCAP', 'KIPO', 'MAIN', 'MCGC', 'TAXI', 'MCC', 'MRCC', 'MVC', 'NMFC', 'NGPC', 'NMD', 'OFS', 'PFLT', 'PNNT', 'PSEC', 'RAND', 'SAR', 'SLRC', 'SUNS', 'SCM', 'TCPC', 'TF', 'TCRD', 'TICC', 'TCAP', 'HIF', 'WHF', 'FSFR']
+2013-09-18 03:22:05 - scrape - WARNING - self.cef_get.get_info() failed
+2013-09-18 03:22:46 - send_mail.GenerateAttachment - DEBUG - 597
+2013-09-18 03:22:46 - send_mail.GenerateAttachment - ERROR - could not open file
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/PyCef-0.0.6-py2.7.egg/pycef/execution/export_data.py", line 140, in write_info
+    with open(output_file_loc, 'w') as out_file:
+IOError: [Errno 13] Permission denied: '/usr/local/lib/python2.7/dist-packages/PyCef-0.0.6-py2.7.egg/pycef/lib/conf/attachment.csv'
+2013-09-18 03:23:19 - send_mail.GenerateAttachment - DEBUG - 597
+2013-09-18 03:26:56 - send_mail.GenerateAttachment - DEBUG - 597
+2013-09-18 03:26:56 - send_mail.GenerateAttachment - ERROR - could not open file
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/PyCef-0.0.7-py2.7.egg/pycef/execution/export_data.py", line 143, in write_info
+    with open(output_file_loc, 'w') as out_file:
+IOError: [Errno 13] Permission denied: '/usr/local/lib/python2.7/dist-packages/PyCef-0.0.7-py2.7.egg/pycef/lib/conf/attachment.csv'
+2013-09-18 03:29:40 - send_mail.GenerateAttachment - DEBUG - 597
+2013-09-18 03:29:40 - send_mail.GenerateAttachment - ERROR - could not open file
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/PyCef-0.0.7-py2.7.egg/pycef/execution/export_data.py", line 143, in write_info
+    with open(output_file_loc, 'w') as out_file:
+IOError: [Errno 13] Permission denied: '/usr/local/lib/python2.7/dist-packages/PyCef-0.0.7-py2.7.egg/pycef/lib/conf/attachment.csv'
+2013-09-18 03:31:26 - send_mail.GenerateAttachment - DEBUG - 597
+2013-09-18 03:32:50 - scrape.scrape_cefs.CEFInfo - DEBUG - starting pool
+2013-09-18 04:18:44 - scrape.scrape_cefs.CEFInfo - DEBUG - pool joined
+2013-09-18 04:18:44 - scrape.scrape_cefs.CEFInfo - INFO - get_info: Unable to get info from ['NAI', 'ACAS', 'AINV', 'ARCC', 'BKCC', 'CSWC', 'CORR', 'EQS', 'ETUB', 'FDUS', 'FSC', 'SVVC', 'FULL', 'GLUXR', 'GARS', 'GLAD', 'GAIN', 'GBDC', 'GSVC', 'TINY', 'HCAP', 'HTGC', 'HRZN', 'KCAP', 'KIPO', 'MAIN', 'MCGC', 'TAXI', 'MCC', 'MRCC', 'MVC', 'NMFC', 'NGPC', 'NMD', 'OFS', 'PFLT', 'PNNT', 'PSEC', 'RAND', 'SAR', 'SLRC', 'SUNS', 'SCM', 'TCPC', 'TF', 'TCRD', 'TICC', 'TCAP', 'HIF', 'WHF', 'FSFR']
+2013-09-18 04:18:44 - scrape - WARNING - self.cef_get.get_info() failed
+2013-09-20 14:37:16 - send_mail.GenerateAttachment - DEBUG - 597
+2013-09-20 14:37:26 - send_mail - ERROR - server didnt accept the from address
+Traceback (most recent call last):
+  File "pycef/execution/send_mail.py", line 82, in send
+    smtp.sendmail('cef server', self.send_to, self.msg.as_string())
+  File "/usr/lib/python2.7/smtplib.py", line 722, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+SMTPSenderRefused: (552, '5.3.4 Message size exceeds fixed limit', 'cef server')
+2013-09-20 14:48:30 - send_mail.GenerateAttachment - DEBUG - 597
