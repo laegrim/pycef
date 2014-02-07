@@ -2,6 +2,8 @@
 Functions provide basic (fundamental) analysis
 '''
 
+import numpy as np
+
 def best_fit_slopes_compare(list_1, list_2):
     '''
     Comparison function for slopes of best fit lines over a series of points
@@ -67,9 +69,9 @@ def exp_mov_avg(series, alpha = None, S1 = None):
     else:
         
         #print statement is just interesting to watch sometimes
-        #print ('S(' + str(len(series)) + ') = ' + \
-        #str(alpha) + ' * (' + str(series[len(series) - 2]) + \
-        #') + (' + str(1 - alpha) + ' + S(' + str(len(series) - 1) + '))')
+        print ('S(' + str(len(series)) + ') = ' + \
+        str(alpha) + ' * (' + str(series[len(series) - 2]) + \
+        ') + (' + str(1 - alpha) + ' + S(' + str(len(series) - 1) + '))')
         
         return ((alpha * series[len(series) - 2]) + \
         (1 - alpha)*(alt_exp_mov_avg(series[:len(series) - 1], alpha)))
@@ -109,9 +111,9 @@ def alt_exp_mov_avg(series, alpha = None, S1 = None):
     else:
         
         #print statement is just interesting to watch sometimes
-        #print ('S(' + str(len(series)) + ') = ' + \
-        #str(alpha) + ' * (' + str(series[len(series) - 1]) + \
-        #') + (' + str(1 - alpha) + ' + S(' + str(len(series) - 1) + '))')
+        print ('S(' + str(len(series)) + ') = ' + \
+        str(alpha) + ' * (' + str(series[len(series) - 1]) + \
+        ') + (' + str(1 - alpha) + ' + S(' + str(len(series) - 1) + '))')
         
         return ((alpha * series[len(series) - 1]) + \
         (1 - alpha)*(alt_exp_mov_avg(series[:len(series) - 1], alpha)))

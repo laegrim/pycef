@@ -255,6 +255,9 @@ def partition_update(partition, rising_values, data, cur_day):
     if symbol == 'cash':
         current_value_prop = 1.0
     else:
+        #this should be changed.... doesn't make any sense to reference the 
+        #value, only need the probability that value rises or falls.
+        #Maybe have a range [-1, 1]?  Warrants future looks.
         current_value_prop = (partition['currentvalue']/
             partition['initialvalue']) * rising_values[symbol]
             
