@@ -149,7 +149,10 @@ def scrape_info(args_list):
             if ticker_info == None:
                 stored_date = None
                 ticker_info = {'_id': ticker,
-                               'history':[]
+                               'history':[],
+                               'dist_freq':'Missing',
+                               'dist_type':'Missing',
+                               'tax_classification':'Missing',
                                }
             else:
                 stored_date = ticker_info['history'][0]['date']
