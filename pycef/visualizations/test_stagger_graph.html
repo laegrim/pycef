@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+.node {
+  stroke: #00B;
+  stroke-width: 1.5px;
+  fill: #fff;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+.ui-slider {
+  font-size: 10px;
+  width: 300px;
+  margin-top: 5px;
+}
+
+.ui-state-focus {
+  outline: none;
+}
+
+#level {
+  width: 300px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*.text {
+	font: 30px sans-serif;
+	color: #00B;
+}*/
+
+</style>
+<body>
+	<link rel="stylesheet" href="jquery-ui-1.8rc3.custom.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="../media/js/d3.min.js"></script>
+   <script src="../media/js/d3.layout.min.js"></script>
+   <script src="../media/js/underscore-min.js"></script>
+   <script src="../media/js/jquery.min.js"></script>
+   <script src="../media/js/jquery-ui-1.8rc3.custom.min.js"></script>
+	<p><label for="level">Values Over Time</label>: <span id="level"></span> <span id="level-val">1</span>
+	</p><input type="button" value="Play" id="play">
+	</p><input type="button" value="Stop" id="stop" style="display: none">
+	<script type="text/javascript" src="d3js/d3.v3.min.js"></script>
+	<script type="text/javascript" src="graph_stagger.js"></script>
+	<script type="text/javascript" src="ui_stagger.js"></script>
+</body>

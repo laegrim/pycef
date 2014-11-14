@@ -92,17 +92,21 @@ class SendMail(object):
         smtp.close()
 
 if __name__ == '__main__':
-    ATTACHMENT = Export.ExportCSV(SCRAPE_CONF_LOC)
-    ATTACHMENT.parse_config()
-    ATTACHMENT.grab_info('CEFS', 'CEF_Info')
-    ATTACHMENT.format_info()
-    ATTACHMENT.write_info(CONF_DIR + '/attachment.csv')
-    config = ConfigObj(CONF_DIR + '/scrape.conf')
-    recipt = config['send_freq']['recp_email']
-    MAIL = SendMail(recipt)
-    MAIL.configure_mail(
-        open(SCRAPE_CONF_LOC).read(), CONF_DIR + '/attachment.csv')
-    MAIL.send()
+    logger = logging.getLogger('send_mail')
+    try:	
+        ATTACHMENT = Export.ExportCSV(SCRAPE_CONF_LOC)
+        ATTACHMENT.parse_config()
+        ATTACHMENT.grab_info('CEFS', 'CEF_Info')
+        ATTACHMENT.format_info()
+        ATTACHMENT.write_info(CONF_DIR + '/attachment.csv')
+        config = ConfigObj(CONF_DIR + '/scrape.conf')
+        recipt = config['send_freq']['recp_email']
+        MAIL = SendMail(recipt)
+        MAIL.configure_mail(
+            open(SCRAPE_CONF_LOC).read(), CONF_DIR + '/attachment.csv')
+    	MAIL.send()
+    except Exception:
+	logger.exception('Error Sending Mail')
     
     
     
