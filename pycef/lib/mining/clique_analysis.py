@@ -540,52 +540,52 @@ def find_interesting_keywords(graph, cliques_list, pageranks, keyword_list,
                 interesting_keywords.append((keyword, page[1]))
                 print keyword[0] + ', ' + keyword[1] + ', ' + keyword[3]
                 
-G = json_graph.load(open('/home/laegrim/pycef/pycef/visualizations/exp.json'))
-K = nx.Graph()
-T = .9
-
-L = []
-total = 0
-for i in range(6):
-    
-    
-    L = []
-
-    start = time.time()
-    simple_enum_pseudo_clique_no_repeat(G,K,T,L)
-    end = time.time()
-    total += end - start
-    print "finished"
-
-print "Average Time: " + str(total/6.0)
-
-total = 0
-M = []
-for i in range(6):
-    
-    M = []
-    start = time.time()
-    enum_pseudo_cliques(G,K,T,M)
-    end = time.time()
-    total += end - start
-    
-    print "finished"
-
-print "Average Time: " + str(total/6.0)
-
-
-total = 0
-N = []
-for i in range(6):
-    
-    N = []
-
-    start = time.time()
-    enum_pseudo_cliques_no_repeat(G,K,T,N)
-    end = time.time()
-    total += end - start
-    print "finished"
-
-print "Average Time: " + str(total/6.0)
-
-print "finished"
+#G = json_graph.load(open('/home/laegrim/pycef/pycef/visualizations/exp.json'))
+#K = nx.Graph()
+#T = .9
+#
+#L = []
+#total = 0
+#for i in range(6):
+#    
+#    
+#    L = []
+#
+#    start = time.time()
+#    simple_enum_pseudo_clique_no_repeat(G,K,T,L)
+#    end = time.time()
+#    total += end - start
+#    print "finished"
+#
+#print "Average Time: " + str(total/6.0)
+#
+#total = 0
+#M = []
+#for i in range(6):
+#    
+#    M = []
+#    start = time.time()
+#    enum_pseudo_cliques(G,K,T,M)
+#    end = time.time()
+#    total += end - start
+#    
+#    print "finished"
+#
+#print "Average Time: " + str(total/6.0)
+#
+#
+#total = 0
+#N = []
+#for i in range(6):
+#    
+#    N = []
+#
+#    start = time.time()
+#    enum_pseudo_cliques_no_repeat(G,K,T,N)
+#    end = time.time()
+#    total += end - start
+#    print "finished"
+#
+#print "Average Time: " + str(total/6.0)
+#
+#print "finished"
